@@ -1,6 +1,4 @@
-import Image from "next/image";
 import { Header } from "./components/Header";
-import Link from "next/link";
 import { Post } from "./components/Post";
 import { Heading2 } from "./components/Heading2";
 import { PostDate } from "./components/Post/PostDate";
@@ -128,6 +126,47 @@ export default function Home() {
             22:00 - 23:59 — Dansgolv!<br/>
             <br/>
             <ParagraphLink href="https://kulturnattstockholm.se/event/hojden-studios-oppnar-dorrarna/" target="_blank">https://kulturnattstockholm.se/event/hojden-studios-oppnar-dorrarna/</ParagraphLink>
+          </PostBody>
+        </Post>
+
+        <Post>
+          <PostDate>22/10/24</PostDate>
+          <Heading2>höjden IS LOOKING FOR NEW ARTISTS!</Heading2>
+          <PostBody>
+            höjden is an independent space for art run by artists. At höjden you can share office space and studios or you can rent your own room. We are searching for people interested in a collective context: artists, writers, producers and curators with an interest in working in an interdisciplinary and experimental space.<br/>
+            <br/>
+            <span className="italic">höjden offers you…</span><br/>
+            <ul className="list-disc pl-8">
+              <li>
+                being a member of a community of all kinds of artists & culture workers.
+              </li>
+              <li>
+                24/7 access to well equipped shared office area for the daily work as a freelancer.  
+              </li>
+              <li>
+                bookable private meeting room, 25kr/hour.
+              </li>
+              <li>
+                kitchen and hang-out area, well supplied with coffee & tea. 
+              </li>
+              <li>
+                opportunity to book our 100m2 studio for the internal, and/or common are at-cost price of 100kr/hour weekdays, 50kr/hour weekends & evenings.
+              </li>
+              <li>
+                Performance events, exhibition space, launch parties, annual festival & other events for all kinds of artists & culture workers.
+              </li>
+              <li>
+                Discounted workshops such as: music production for stage, tech for stage, performance workshops. (see höjden sessions)
+              </li>
+            </ul>  
+            <br/>
+            To become an artist in the house you sign a service contract ("tjänstekontrakt") with höjden, which you can do as a private person or through your company. The service contract costs 200 SEK/month.<br/>
+            <br/>
+            When you become an artist in the house, you’re creating the atmosphere and place that is höjden together with everyone else. The possibility to create public and community events, house meetings, networks and opportunities for knowledge-sharing is open to all artists. And if you just need a nice place to work, it’s available!<br/>
+            <br/>
+            If interested, send a CV and a short personal letter to info@hojden.house telling us what type of art form you work with and why you want to be an active artist at höjden.<br/>
+            <br/>
+            <span className="italic">höjden was created 2019. höjden is run by Släktet Economic association. Coordinator: Anna Fischler, <ParagraphLink href="mailto:info@hojden.house">info@hojden.house</ParagraphLink>. In case of any questions, please email us!</span>
           </PostBody>
         </Post>
         
