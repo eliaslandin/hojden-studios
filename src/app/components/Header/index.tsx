@@ -8,11 +8,11 @@ export const Header = ({
 }) => {
   return (
     <header>
-        <div className="flex flex-col items-center column gap-4 py-4">
+        <div className="flex flex-col items-center container gap-4 py-4">
           <div>
             <Image
               alt="Höjden studios logga"
-              src="/hojden_webblogga.webp"
+              src="/hojden_webblogga.jpg"
               width={800}
               height={119}
               className="w-max-full"

@@ -11,7 +11,8 @@ const config = {
   prefix: "",
   theme: {
     colors: {
-      "hojden-green": "#006613"
+      "hojden-green": "#006613",
+      "hojden-orange": "#FF8052"
     },
     container: {
       center: true,
