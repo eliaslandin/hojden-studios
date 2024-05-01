@@ -14,12 +14,13 @@ export default function Home() {
         <Post>
           <PostDate>24/03/22</PostDate>
           <Heading2>höjden sessions</Heading2>
-          <Link href="/daglig-traening" className="flex justify-center pt-4">
+          <Link href="/daglig-traening" className="flex relative justify-center pt-4 max-w-full max-h-96">
             <Image
               src="/hojden_sessions_spring_2024.jpg"
-              width={480}
-              height={607}
+              width={672}
+              height={0}
               alt="Höjden sessions spring 2024."
+              className="object-contain"
             />
           </Link>
           <p className="pt-4 text-base sm:text-lg">
