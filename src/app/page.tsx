@@ -4,6 +4,8 @@ import Link from "next/link";
 import { Post } from "./components/Post";
 import { Heading2 } from "./components/Heading2";
 import { PostDate } from "./components/Post/PostDate";
+import { PostImage } from "./components/Post/PostImage";
+import { PostBody } from "./components/Post/PostBody";
 
 export default function Home() {
   return (
@@ -14,17 +16,13 @@ export default function Home() {
         <Post>
           <PostDate>24/03/22</PostDate>
           <Heading2>höjden sessions</Heading2>
-          <Link href="/daglig-traening" className="flex relative justify-center pt-4 max-w-full max-h-96">
-            <Image
-              src="/hojden_sessions_spring_2024.jpg"
-              width={672}
-              height={0}
-              alt="Höjden sessions spring 2024."
-              className="object-contain"
-            />
-          </Link>
-          <p className="pt-4 text-base sm:text-lg">
-            RSVP to <Link className="underline" href="mailto:hojdenbokning@gmail.com">hojdenbokning@gmail.com</Link> and write höjden sessions in the subject line, and which workshop you’d like to attend.
+          <PostImage
+            src="/hojden_sessions_spring_2024.jpg"
+            alt="Höjden sessions spring 2024."
+            href="/daglig-traening"
+          />
+          <PostBody>
+            RSVP to <Link className="underline" href="mailto:hojdenbokning@gmail.com">hojdenbokning@gmail.com</Link> and write höjden sessions in the subject line, and which workshop you'd like to attend.
             <br/><br/>
             All workshops are held at höjden - Östbergatorget 21.
             <br/><br/>
@@ -37,7 +35,7 @@ export default function Home() {
             26th of March 14.30-16.30<br/>
             27th of March 14.30-16.30<br/>
             <br/><br/>
-            <h3 className="font-bold">Erik Valentin Berg: psychosomatics’ and dance - making a space that moves us</h3>
+            <h3 className="font-bold">Erik Valentin Berg: psychosomatics' and dance - making a space that moves us</h3>
             9th of April 11-14<br/>
             10th of April 11-14<br/>
             <br/><br/>
@@ -50,7 +48,7 @@ export default function Home() {
             16th of April 18-20<br/>
             17th of April 18-20<br/>
             18th of April 18-20<br/>
-          </p>
+          </PostBody>
         </Post>
         <div className="w-full max-w-2xl">
           
