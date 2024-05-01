@@ -22,7 +22,8 @@ const config = {
         "hojden-green": "#006613",
         "hojden-orange": "#FF8052",
         "hojden-navy": "#0F495B",
-        "hojden-peach": "#F8A895"
+        "hojden-peach": "#F8A895",
+        "hojden-lavender": "#a6a6e6"
       },
       keyframes: {
         "accordion-down": {

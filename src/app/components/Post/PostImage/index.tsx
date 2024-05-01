@@ -15,7 +15,7 @@ export const PostImage = ({
 }) => {
   return href ?
     (
-      <Link href={href} className={cn("flex relative justify-center py-4 max-w-full max-h-[40rem]", className)}>
+      <Link href={href} className={cn("flex relative justify-center py-4 max-w-full", className)}>
         <Image
           src={src}
           width={672}
@@ -26,7 +26,7 @@ export const PostImage = ({
       </Link>
     )
   : (
-    <div className={cn("flex relative justify-center py-4 max-w-full max-h-[40rem]", className)}>
+    <div className={cn("flex relative justify-center py-4 max-w-full", className)}>
         <Image
           src={src}
           width={672}
