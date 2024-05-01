@@ -8,6 +8,6 @@ export const Post = ({
   children: React.ReactNode;
 }) => {
   return (
-    <div className={cn("w-full max-w-2xl", className)}>{children}</div>
+    <div className={cn("w-full max-w-2xl pb-8", className)}>{children}</div>
   );
 };

@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Barlow } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const barlow = Barlow({ 
+  weight: ["200", "400", "700"], 
+  subsets: ["latin"] 
+});
 
 export const metadata: Metadata = {
   title: "Höjden studios",
@@ -16,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} text-hojden-green`}>{children}</body>
+      <body className={`${barlow.className} text-hojden-green font-light`}>{children}</body>
     </html>
   );
 }

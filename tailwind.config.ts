@@ -10,10 +10,6 @@ const config = {
   ],
   prefix: "",
   theme: {
-    colors: {
-      "hojden-green": "#006613",
-      "hojden-orange": "#FF8052"
-    },
     container: {
       center: true,
       padding: "2rem",
@@ -22,6 +18,12 @@ const config = {
       },
     },
     extend: {
+      colors: {
+        "hojden-green": "#006613",
+        "hojden-orange": "#FF8052",
+        "hojden-navy": "#0F495B",
+        "hojden-peach": "#F8A895"
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

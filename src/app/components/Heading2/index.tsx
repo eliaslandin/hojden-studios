@@ -8,6 +8,6 @@ export const Heading2 = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h2 className={cn("text-xl text-hojden-orange pt-4", className)}>{children}</h2>
+    <h2 className={cn("text-xl font-normal text-hojden-orange", className)}>{children}</h2>
   );
 };

@@ -9,7 +9,7 @@ export const PostDate = ({
 }) => {
   return (
     <div className={cn("flex justify-end", className)}>
-      <p className="text-xl font-bold text-hojden-orange">{children}</p>
+      <p className="text-xl font-normal text-hojden-orange">{children}</p>
     </div>
   );
 };

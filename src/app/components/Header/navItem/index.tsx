@@ -13,7 +13,7 @@ export const NavItem = ({
 }) => {
   return (
     <li className={cn("border-r border-hojden-green", className)}>
-      <Link href={href} className="block px-6 py-3">{children}</Link>
+      <Link href={href} className="block px-7 py-3 text-lg">{children}</Link>
     </li>
   );
 };
