@@ -70,7 +70,64 @@ export default function Home() {
             Instead of exclusive and expensive, inclusive and cheap!<br />
             Many artists and spaces for art are struggling to survive. höjden is not an exception. As one of the few artist-run spaces with a dance studio in Stockholm, höjden has an important, irreplaceable position. We see the need for this space to continue to exist; to be a place for artists to do art as well as gather and organize. Instead of raising the prices to follow the market, we will reduce them significantly to create a space where everyone can participate.  A space where we can support each other in daily struggles and be a strong collective voice.<br />
             <br />
-            <HojdenButton href="/">Ansök här för att bli medlem</HojdenButton>
+            <HojdenButton href="https://forms.gle/VATrpZTMH8vdaqpd8" target="_blank">Ansök här för att bli medlem</HojdenButton>
+          </PostBody>
+        </Post>
+
+        <Post>
+          <PostDate>23/10/02</PostDate>
+          <Heading2>Dansklassen!</Heading2>
+          <PostBody>
+            Vår gemensamma hatfigur, vårt nöje och slit, vår gemenskap och våra förebilder. Vår fysiska ritual för yrkesidentitet och sensorisk uppmärksamhet. Våra gemensamma morgnar.<br/>
+            <br/>
+            Den 3-13 oktober, joina oss på klass med Pontus Pettersson och Robert Malmborg, på höjden i Östberga, Östbergatorget 21.<br/>
+            <br/>
+            <Heading3>Tis-fre 3-6 oktober, kl 10-11: Pontus Pettersson</Heading3>
+            <Heading3>Mån-fre 9-13 oktober, kl 10-11: Robert Malmborg</Heading3>
+            <br/>
+            Klasserna är gratis, Pontus och Robert gör sin grej, alla som vill röra på sig, workshoppa, dansa med andra i denna lösa värld vi kallar dansvärlden är välkomna. Sprid ordet, föranmälan behövs inte, kom förbi!<br/>
+            <br/>
+            Dansklasserna anordnas som del av processen med ett nytt dansverk av Stina Nyberg med premiär i maj 2024.
+          </PostBody>
+        </Post>
+
+        <Post>
+          <PostDate>23/03/30</PostDate>
+          <Heading2>höjden SESSIONS/DAGLIG TRÄNING</Heading2>
+          <PostBody>
+              höjden sessions is back with a series of workshops during april 2023. <ParagraphLink href="/daglig-traening">more info here.</ParagraphLink>
+          </PostBody>
+        </Post>
+
+        <Post>
+          <PostDate>23/04/22</PostDate>
+          <Heading2>KULTURNATTEN</Heading2>
+          <PostImage
+            src="/hojden_kulturnatt_april_2023.jpg"
+            alt="Höjden kulturnatt april 2023."
+          />
+          <PostBody>
+            Under Kulturnatten bjuder det interdisciplinära konstnärshuset höjden studios in till en helkväll i konstens olika former. Ni är varmt välkomna för att uppleva live-musik och performance, titta på film och bildkonst, prova på magdans eller för att hänga med konstnärerna på höjden!<br/>
+            <br/>
+            <Heading3>Programpunkter</Heading3>
+            18:00 - 18:30 — Musik och mingel!<br/>
+            <br/>
+            18:00 - 23:59 — Film: Eight eyed wheel av Paloma Madrid<br/>
+            Längd: 5 minutes. Loopas under hela kvällen.<br/>
+            <br/>
+            18:00 - 23:59 — Utställning: Wunderwall<br/>
+            Blandade verk av höjdens konstnärer.<br/>
+            <br/>
+            18:30 - 19:30 — Prova på magdans med Nasreen Aljanabi Larsson<br/>
+            Inga förkunskaper krävs.<br/>
+            <br/>
+            20:00 - 21:00 — Musik performance: Scott Cazan<br/>
+            <br/>
+            21:00 - 22:00 — Live gig med osläppt musik: Rayo​<br/>
+            <br/>
+            22:00 - 23:59 — Dansgolv!<br/>
+            <br/>
+            <ParagraphLink href="https://kulturnattstockholm.se/event/hojden-studios-oppnar-dorrarna/" target="_blank">https://kulturnattstockholm.se/event/hojden-studios-oppnar-dorrarna/</ParagraphLink>
           </PostBody>
         </Post>
         

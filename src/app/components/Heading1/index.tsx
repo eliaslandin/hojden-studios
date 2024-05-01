@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-export const Heading2 = ({
+export const Heading1 = ({
   className,
   children
 }: {
@@ -8,6 +8,6 @@ export const Heading2 = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h2 className={cn("text-xl font-normal pb-2 text-hojden-orange", className)}>{children}</h2>
+    <h1 className={cn("font-bold text-3xl pb-4", className)}>{children}</h1>
   );
 };
