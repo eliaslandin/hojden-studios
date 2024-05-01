@@ -6,13 +6,8 @@ import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-import { cn } from "@/lib/utils";
-import Link from "next/link";
 import { DropDrownTrigger } from "./DropDownTrigger";
 import { DropDrownLink } from "./DropDownLink";
 
@@ -76,30 +71,3 @@ export const Header = ({
 
   );
 };
-
-    {/* <header>
-        <div className="flex flex-col items-center container gap-1 py-5">
-          <div>
-            <Image
-              alt="Höjden studios logga"
-              src="/hojden_webblogga.jpg"
-              width={800}
-              height={119}
-              className="w-max-full"
-            />
-          </div>
-          <div>
-            <nav>
-              <ul className="flex flex-row flex-wrap">
-                <NavItem href="/">Aktuellt</NavItem>
-                <NavItem href="/">Kalender</NavItem>
-                <NavItem href="/">höjden sessions</NavItem>
-                <NavItem href="/">Medlemskap</NavItem>
-                <NavItem href="/">Om höjden</NavItem>
-                <NavItem href="/">Nyhetsbrev</NavItem>
-                <NavItem href="/" className="border-r-0">Supportmedlem</NavItem>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </header> */}

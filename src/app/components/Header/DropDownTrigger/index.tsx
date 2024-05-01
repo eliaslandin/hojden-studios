@@ -1,6 +1,4 @@
-import Image from "next/image";
 import { cn } from "@/lib/utils"
-import Link from "next/link";
 import { NavigationMenuTrigger, } from "@/components/ui/navigation-menu";
 
 export const DropDrownTrigger = ({
