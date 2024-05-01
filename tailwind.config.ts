@@ -10,6 +10,9 @@ const config = {
   ],
   prefix: "",
   theme: {
+    colors: {
+      "hojden-green": "#006613"
+    },
     container: {
       center: true,
       padding: "2rem",

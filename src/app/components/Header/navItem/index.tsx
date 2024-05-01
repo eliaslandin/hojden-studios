@@ -1,37 +1,19 @@
 import Image from "next/image";
+import { cn } from "@/lib/utils"
+import Link from "next/link";
 
-export const Header = ({
+export const NavItem = ({
   className,
+  children,
+  href,
 }: {
   className?: string;
+  children: React.ReactNode;
+  href: string;
 }) => {
   return (
-    <header>
-        <div className="flex flex-col items-center column gap-6">
-          <div>
-            <Image
-              alt="Höjden studios logga"
-              src="/hojden_webblogga.webp"
-              height={200}
-              width={700}
-            />
-          </div>
-          <div>
-            <nav>
-              <ul className="flex flex-row">
-                <li>
-                  <a href="/" className="border-r border-hojden-green px-8 py-4">Aktuellt</a>
-                </li>
-                <li>
-                  <a href="/" className="">Kalender</a>
-                </li>
-                <li>
-                  <a href="/" className="">Höjden sessions</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </header>
+    <li className={cn("border-r border-hojden-green", className)}>
+      <Link href={href} className="block px-6 py-3">{children}</Link>
+    </li>
   );
 };
