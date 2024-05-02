@@ -44,6 +44,9 @@ export const Header = ({
                 <NavigationMenuContent className="text-hojden-green px-4">
                   <ul>
                     <li>
+                      <DropDrownLink href="/bli-medlem">Bli medlem</DropDrownLink>
+                    </li>
+                    <li>
                       <DropDrownLink href="/lokaler-och-bilder">Bilder och specifikationer av lokaler</DropDrownLink>
                     </li>
                     <li>

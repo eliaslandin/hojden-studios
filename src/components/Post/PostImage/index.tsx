@@ -29,7 +29,7 @@ export const PostImage = ({
     <div className={cn("flex relative justify-center py-4 max-w-full", className)}>
         <Image
           src={src}
-          width={672}
+          width={1200}
           height={0}
           alt={alt}
           className="object-contain"

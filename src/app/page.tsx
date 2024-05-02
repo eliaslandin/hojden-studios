@@ -11,7 +11,7 @@ import { HojdenButton } from "../components/HojdenButton";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
-      <div className="container flex flex-col items-center">
+      <div className="container max-w-2xl flex flex-col items-center">
         <Heading1 className="py-10">Välkommen till höjden studios!</Heading1>
         <Post>
           <PostDate>24/03/22</PostDate>
