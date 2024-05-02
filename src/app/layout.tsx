@@ -22,7 +22,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${barlow.className} text-hojden-green font-light`}>
         <Header/>
-        {children}</body>
+        {children}
+      </body>
     </html>
   );
 }
