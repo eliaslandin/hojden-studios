@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Barlow } from "next/font/google";
 import "./globals.css";
+import { Header } from "../components/Header";
 
 const barlow = Barlow({ 
-  weight: ["200", "400", "700"], 
+  weight: ["200", "500", "700"], 
   subsets: ["latin"] 
 });
 
@@ -19,7 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${barlow.className} text-hojden-green font-light`}>{children}</body>
+      <body className={`${barlow.className} text-hojden-green font-light`}>
+        <Header/>
+        {children}</body>
     </html>
   );
 }

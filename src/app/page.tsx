@@ -1,18 +1,16 @@
-import { Header } from "./components/Header";
-import { Post } from "./components/Post";
-import { Heading2 } from "./components/Heading2";
-import { PostDate } from "./components/Post/PostDate";
-import { PostImage } from "./components/Post/PostImage";
-import { PostBody } from "./components/Post/PostBody";
-import { Heading3 } from "./components/Heading3";
-import { Heading1 } from "./components/Heading1";
-import { ParagraphLink } from "./components/ParagraphLink";
-import { HojdenButton } from "./components/HojdenButton";
+import { Post } from "../components/Post";
+import { Heading2 } from "../components/Heading2";
+import { PostDate } from "../components/Post/PostDate";
+import { PostImage } from "../components/Post/PostImage";
+import { PostBody } from "../components/Post/PostBody";
+import { Heading3 } from "../components/Heading3";
+import { Heading1 } from "../components/Heading1";
+import { ParagraphLink } from "../components/ParagraphLink";
+import { HojdenButton } from "../components/HojdenButton";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
-      <Header/>
       <div className="container flex flex-col items-center">
         <Heading1 className="py-10">Välkommen till höjden studios!</Heading1>
         <Post>
