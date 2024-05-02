@@ -17,17 +17,17 @@ export default function Page() {
             <Heading3>1 March - höjden nights (afterwork) 17.00</Heading3>
             <br/>
             <Heading3>25-27 March - höjden sessions (workshop)</Heading3>
-            Read more here: <ParagraphLink href="https://en.hojden.house/daglig-traening">https://en.hojden.house/daglig-traening</ParagraphLink>
+            Read more here: <ParagraphLink href="/daglig-traening">https://en.hojden.house/daglig-traening</ParagraphLink>
             <br/>
             <br/>
             <Heading3>5 April - höjden nights (afterwork) 17.00</Heading3>
             <br/>
             <Heading3>9-11 April - höjden sessions (workshop)</Heading3>
-            Read more here: <ParagraphLink href="https://en.hojden.house/daglig-traening">https://en.hojden.house/daglig-traening</ParagraphLink>
+            Read more here: <ParagraphLink href="/daglig-traening">https://en.hojden.house/daglig-traening</ParagraphLink>
             <br/>
             <br/>
             <Heading3>16-18 April - höjden sessions (workshop)</Heading3>
-            Read more here: <ParagraphLink href="https://en.hojden.house/daglig-traening">https://en.hojden.house/daglig-traening</ParagraphLink>
+            Read more here: <ParagraphLink href="/daglig-traening">https://en.hojden.house/daglig-traening</ParagraphLink>
             <br/>
             <br/>
             <Heading3>27 April - höjden festival</Heading3>
