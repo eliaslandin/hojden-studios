@@ -1,11 +1,7 @@
 import { Heading1 } from "@/components/Heading1";
-import { Heading2 } from "@/components/Heading2";
-import { HojdenButton } from "@/components/HojdenButton";
 import { HojdenImage } from "@/components/HojdenImage";
 import { PageContent } from "@/components/PageContent";
-import { ParagraphLink } from "@/components/ParagraphLink";
 import { ColumnFlexOne } from "@/components/layouts/ColumnFlexOne";
-import { ColumnFlexTwo } from "@/components/layouts/ColumnFlexTwo";
 import { TwoColumnLayout } from "@/components/layouts/TwoColumnLayout";
 
 
