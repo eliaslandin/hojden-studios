@@ -1,6 +1,5 @@
 import { Heading1 } from "@/components/Heading1";
 import { PageContent } from "@/components/PageContent";
-import { Heading3 } from "@/components/Heading3";
 import { ParagraphLink } from "@/components/ParagraphLink";
 
 
