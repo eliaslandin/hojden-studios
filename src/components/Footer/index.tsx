@@ -4,11 +4,13 @@ import Link from "next/link";
 
 export const Footer = ({
   className,
+  height
 }: {
   className?: string;
+  height: string;
 }) => {
   return (
-    <footer className={cn("w-full text-hojden-ivory bg-hojden-green self-end flex flex-col items-center py-6 px-4 gap-1 font-normal", className)}>
+    <footer style={{height}} className={cn("w-full text-hojden-ivory bg-hojden-green self-end flex flex-col items-center justify-center px-4 gap-1 font-normal", className)}>
       <ParagraphLink href="mailto:info@hojden.house">info@hojden.house</ParagraphLink>
       <p>Östbergatorget 21, 125 73 Älvsjö</p>
       <Link 

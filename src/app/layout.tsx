@@ -19,12 +19,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const footerHeight = "9rem"
+
   return (
     <html lang="en">
-      <body className={`${barlow.className} min-h-screen flex flex-col justify-between text-hojden-green font-light`}>
-        <Header/>
-        {children}
-        <Footer />
+      <body className={`${barlow.className} flex flex-col text-hojden-green font-light`}>
+        <div className={`min-h-[calc(100vh-9rem)]`}>
+          <Header/>
+          {children}
+        </div>
+        <Footer height={footerHeight} />
       </body>
     </html>
   );
