@@ -8,6 +8,6 @@ export const PageContent = ({
   children: React.ReactNode;
 }) => {
   return (
-    <main className={cn("flex container flex-col pt-8", className)}>{children}</main>
+    <main className={cn("flex container flex-col pt-8 pb-16", className)}>{children}</main>
   );
 };
