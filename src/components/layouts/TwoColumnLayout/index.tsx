@@ -8,6 +8,6 @@ export const TwoColumnLayout = ({
   children: React.ReactNode;
 }) => {
   return (
-    <div className={cn("flex flex-col sm:flex-row sm:justify-center gap-10", className)}>{children}</div>
+    <div className={cn("flex flex-col sm:flex-row sm:justify-center gap-2", className)}>{children}</div>
   );
 };

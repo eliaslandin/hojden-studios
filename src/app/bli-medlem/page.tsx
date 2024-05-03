@@ -12,7 +12,7 @@ import { TwoColumnLayout } from "@/components/layouts/TwoColumnLayout";
 export default function Page() {
   return (
     <PageContent>
-      <TwoColumnLayout>
+      <TwoColumnLayout className="gap-10">
         <ColumnFlexTwo>
           <Heading1 className=" text-hojden-orange">Bli medlem i höjden studios</Heading1>
           <p>
