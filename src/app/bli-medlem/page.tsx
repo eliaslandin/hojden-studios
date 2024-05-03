@@ -17,9 +17,9 @@ export default function Page() {
           <Heading1 className=" text-hojden-orange">Bli medlem i höjden studios</Heading1>
           <p>
             Vill du bli medlem i höjden studios? Just nu söker vi fler som vill vara med och driva huset och dela platsen! höjden erbjuder verksamhetsanpassade lokaler för det dagliga arbetet som frilansare. Som yrkesverksam konstnär kan du vara delaktig genom delad kontorsplats eller genom att hyra en egen ateljé.<br/>
-          <br/>
-          höjden erbjuder
-        </p>
+            <br/>
+            höjden erbjuder
+          </p>
           <ul className="list-disc pl-8">
             <li>
               <p>
@@ -60,11 +60,11 @@ export default function Page() {
           <br/>
           <p>
             Medlemskapet är 200 SEK per månad ink. moms och du blir medlem antingen som privatperson eller via ditt företag.<br/>
-          <br/>
-          Du kan också hyra din egna ateljé/kontor. Maila <ParagraphLink href="mailto:info@hojden.house">info@hojden.house</ParagraphLink> för mer info om lediga lokaler.
-          Vid intresse, skicka in anmälan via länken nedan.<br/>
-          <br/>
-        </p>
+            <br/>
+            Du kan också hyra din egna ateljé/kontor. Maila <ParagraphLink href="mailto:info@hojden.house">info@hojden.house</ParagraphLink> för mer info om lediga lokaler.
+            Vid intresse, skicka in anmälan via länken nedan.<br/>
+            <br/>
+          </p>
           <HojdenButton href="https://forms.gle/VATrpZTMH8vdaqpd8" target="_blank">Ansök här för att bli medlem</HojdenButton>
           <br/>
           <ParagraphLink href="/supportmedlem" className="text-hojden-orange"><Heading2>Bli supportmedlem</Heading2></ParagraphLink>
