@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${barlow.className} text-hojden-green font-light`}>
+      <body className={`${barlow.className} min-h-screen text-hojden-green font-light`}>
         <Header/>
         {children}
       </body>
