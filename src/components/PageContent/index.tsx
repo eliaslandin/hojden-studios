@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-export const PostBody = ({
+export const PageContent = ({
   className,
   children
 }: {
@@ -8,8 +8,6 @@ export const PostBody = ({
   children: React.ReactNode;
 }) => {
   return (
-    <p className={cn("pb-4 text-base sm:text-lg", className)}>
-      {children}
-    </p>
+    <main className={cn("flex container flex-col pt-8 pb-16", className)}>{children}</main>
   );
 };

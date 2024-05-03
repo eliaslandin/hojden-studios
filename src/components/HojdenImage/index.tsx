@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Image from "next/image";
 
-export const PostImage = ({
+export const HojdenImage = ({
   className,
   href,
   alt,
@@ -18,7 +18,7 @@ export const PostImage = ({
       <Link href={href} className={cn("flex relative justify-center py-4 max-w-full", className)}>
         <Image
           src={src}
-          width={672}
+          width={1200}
           height={0}
           alt={alt}
           className="object-contain"

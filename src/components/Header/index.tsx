@@ -59,8 +59,15 @@ export const Header = ({
                 <DropDrownTrigger>Om höjden</DropDrownTrigger>
                 <NavigationMenuContent className="text-hojden-green px-4">
                   <ul>
-                    <DropDrownLink href="/om-hoejden">Verksamhet</DropDrownLink>
-                    <DropDrownLink href="/medlemmar">Kontakt och hitta hit</DropDrownLink>
+                    <li>
+                      <DropDrownLink href="/om-hoejden">Verksamhet</DropDrownLink>
+                    </li>
+                    <li>
+                      <DropDrownLink href="/styrelsen">Styrelsen</DropDrownLink>
+                    </li>
+                    <li>
+                      <DropDrownLink href="/medlemmar">Kontakt och hitta hit</DropDrownLink>
+                    </li>
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
