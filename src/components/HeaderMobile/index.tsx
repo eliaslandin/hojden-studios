@@ -30,13 +30,15 @@ export const HeaderMobile = ({
 }) => {
   return (
     <header className="sticky top-0 w-full sm:hidden container">
-      <Image
-        alt="Höjden studios logga"
-        src="/hojden_webblogga.jpg"
-        width={800}
-        height={0}
-        className="w-max-full py-4"
-      />
+      <Link href="/">
+        <Image
+          alt="Höjden studios logga"
+          src="/hojden_webblogga.jpg"
+          width={800}
+          height={0}
+          className="w-max-full py-4"
+        />
+      </Link>
       <Dialog>
         <DialogTrigger asChild>
           <Button
@@ -48,45 +50,114 @@ export const HeaderMobile = ({
             <span className="sr-only">Öppna navigationsmeny</span>
           </Button>
         </DialogTrigger>
-        <DialogContent className="w-full h-full justify-center items-start bg-hojden-beige text-xl">
+        <DialogContent className="w-full h-full overflow-scroll justify-center items-start bg-hojden-beige text-xl font-normal border-0">
           <NavigationMenu orientation="vertical">
-            <NavigationMenuList className="flex-col gap-4">
+            <NavigationMenuList className="flex-col gap-4 pt-10">
+              
               <NavigationMenuItem>
                 <NavigationMenuLink>
-                  <Link href="/" className="block font-light">Aktuellt</Link>                
+                  <DialogClose asChild>
+                    <Link href="/" className="block">Aktuellt</Link>
+                  </DialogClose>
                 </NavigationMenuLink>
               </NavigationMenuItem>
+              
               <NavigationMenuItem>
                 <NavigationMenuLink>
-                  <Link href="/kalender" className="block font-light">Kalender</Link>                
+                  <DialogClose asChild>
+                    <Link href="/kalender" className="block">Kalender</Link>                
+                  </DialogClose>
                 </NavigationMenuLink>
               </NavigationMenuItem>
+
               <NavigationMenuItem>
                 <NavigationMenuLink>
-                  <Link href="/daglig-traening" className="block font-light">höjden sessions</Link>                
+                  <DialogClose asChild>
+                    <Link href="/hojden-sessions" className="block">höjden sessions</Link>                
+                  </DialogClose>
                 </NavigationMenuLink>
               </NavigationMenuItem>
-              <NavigationMenuItem asChild>
-                <Collapsible className="flex flex-col items-center gap-4">
+
+              <NavigationMenuItem>
+                <Collapsible className="flex flex-col items-center">
                     <CollapsibleTrigger className="[&_svg]:data-[state=open]:rotate-180">
                       <div className="flex items-center gap-2">
                         <ChevronDown className="h-4 w-4 text-hojden-green" />
                         <p>Medlemmar</p>
                       </div>
                     </CollapsibleTrigger>
-                  <CollapsibleContent className="flex flex-col items-center gap-4">
+                  <CollapsibleContent className="flex flex-col items-center">
+
                     <NavigationMenuLink>
-                      <Link href="/bli-medlem" className="block font-light">Bli medlem</Link>                
+                      <DialogClose asChild>
+                        <Link href="/bli-medlem" className="block pt-4">Bli medlem</Link>                
+                      </DialogClose>
                     </NavigationMenuLink>
+
                     <NavigationMenuLink>
-                      <Link href="/lokaler-och-bilder" className="block font-light">Våra lokaler</Link>                
+                      <DialogClose asChild>
+                        <Link href="/lokaler" className="block pt-4">Våra lokaler</Link>                
+                      </DialogClose>
                     </NavigationMenuLink>
+
                     <NavigationMenuLink>
-                      <Link href="/hyra-dansstudio" className="block font-light">Vår studio</Link>                
+                      <DialogClose asChild>
+                        <Link href="/studio" className="block pt-4">Vår studio</Link>                
+                      </DialogClose>
                     </NavigationMenuLink>
+
                   </CollapsibleContent>
                 </Collapsible>
               </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <Collapsible className="flex flex-col items-center">
+                    <CollapsibleTrigger className="[&_svg]:data-[state=open]:rotate-180">
+                      <div className="flex items-center gap-2">
+                        <ChevronDown className="h-4 w-4 text-hojden-green" />
+                        <p>Om höjden</p>
+                      </div>
+                    </CollapsibleTrigger>
+                  <CollapsibleContent className="flex flex-col items-center">
+
+                    <NavigationMenuLink>
+                      <DialogClose asChild>
+                        <Link href="/om-hojden" className="block pt-4">Verksamhet</Link>                
+                      </DialogClose>
+                    </NavigationMenuLink>
+
+                    <NavigationMenuLink>
+                      <DialogClose asChild>
+                        <Link href="/styrelsen" className="block pt-4">Styrelsen</Link>                
+                      </DialogClose>
+                    </NavigationMenuLink>
+
+                    <NavigationMenuLink>
+                      <DialogClose asChild>
+                        <Link href="/kontakt" className="block pt-4">Kontakt och hitta hit</Link>                
+                      </DialogClose>
+                    </NavigationMenuLink>
+
+                  </CollapsibleContent>
+                </Collapsible>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuLink>
+                  <DialogClose asChild>
+                    <Link href="/newsletter" className="block">Nyhetsbrev</Link>                
+                  </DialogClose>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuLink>
+                  <DialogClose asChild>
+                    <Link href="/supportmedlem" className="block">Supportmedlem</Link>                
+                  </DialogClose>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+
             </NavigationMenuList>
           </NavigationMenu>
           <DialogFooter className="self-end">

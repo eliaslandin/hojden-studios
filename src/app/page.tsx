@@ -2,7 +2,6 @@ import { Post } from "../components/Post";
 import { Heading2 } from "../components/Heading2";
 import { PostDate } from "../components/Post/PostDate";
 import { HojdenImage } from "../components/HojdenImage";
-import { PostBody } from "../components/Post/PostBody";
 import { Heading3 } from "../components/Heading3";
 import { Heading1 } from "../components/Heading1";
 import { ParagraphLink } from "../components/ParagraphLink";
