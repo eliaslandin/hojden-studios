@@ -17,7 +17,7 @@ export const Header = ({
   className?: string;
 }) => {
   return (
-    <header>
+    <header className="hidden sm:block">
         <div className="flex flex-col items-center container gap-1 py-3">
           <div>
             <Image
