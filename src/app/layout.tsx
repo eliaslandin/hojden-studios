@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Barlow } from "next/font/google";
 import "./globals.css";
-import { Header } from "../components/Header";
+import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { HeaderMobile } from "@/components/HeaderMobile";
 
 const barlow = Barlow({ 
   weight: ["200", "500", "700"], 
@@ -23,8 +24,9 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${barlow.className} flex flex-col text-hojden-green font-light`}>
-        <div className={`min-h-[calc(100vh-9rem)]`}>
+      <body className={`${barlow.className} flex flex-col text-hojden-green font-light bg-hojden-beige`}>
+        <div className={`min-h-[calc(100vh-${footerHeight})] bg-white`}>
+          <HeaderMobile/>
           <Header/>
           {children}
         </div>
