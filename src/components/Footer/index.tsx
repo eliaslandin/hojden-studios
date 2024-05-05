@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import { ParagraphLink } from "../ParagraphLink";
-import Link from "next/link";
+import { Link } from "@/navigation";
 
 export const Footer = ({
   className,
