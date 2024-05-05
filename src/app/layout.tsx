@@ -11,8 +11,8 @@ const barlow = Barlow({
 });
 
 export const metadata: Metadata = {
-  title: "Höjden studios",
-  description: "Höjden studios is an artist-run platform for art production. We call on the broader cultural field to join and support the existence of the house.",
+  title: "höjden studios",
+  description: "höjden studios is an artist-run platform for art production. We call on the broader cultural field to join and support the existence of the house.",
 };
 
 export default function RootLayout({

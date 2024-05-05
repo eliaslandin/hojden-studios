@@ -22,8 +22,8 @@ export default function Page() {
         <br/>
       </p>
         <HojdenButton href="https://forms.gle/VATrpZTMH8vdaqpd8" target="_blank">Ansök här för att bli medlem</HojdenButton>
-        <br/>
       <p>
+        <br/>
         RSVP to <ParagraphLink href="mailto:hojdenbokning@gmail.com">hojdenbokning@gmail.com</ParagraphLink> and write höjden sessions in the subject line, and which workshop you’d like to attend.<br/>
         <br/>
         All workshops are held at höjden - Östbergatorget 21.<br/>
