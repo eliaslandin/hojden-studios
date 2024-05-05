@@ -9,25 +9,25 @@ export default function Page() {
   return (
     <PageContent className="sm:items-center">
       <Heading1 className="text-hojden-orange">Händer på höjden</Heading1>
-      <Heading3>17 February - members party! 18:00-late</Heading3>
-      <Separator className="w-full max-w-[30rem] my-4"/>
-      <Heading3>1 March - höjden nights (afterwork) 17.00</Heading3>
-      <Separator className="w-full max-w-[30rem] my-4"/>
-      <Heading3>25-27 March - höjden sessions (workshop)</Heading3>
+      <Heading3 className="pt-6">17 February - members party! 18:00-late</Heading3>
+
+      <Heading3 className="pt-6">1 March - höjden nights (afterwork) 17.00</Heading3>
+
+      <Heading3 className="pt-6">25-27 March - höjden sessions (workshop)</Heading3>
       <p>Read more here: <ParagraphLink href="https://en.hojden.house/daglig-traening">https://en.hojden.house/daglig-traening</ParagraphLink></p>
-      <Separator className="w-full max-w-[30rem] my-4"/>
-      <Heading3>5 April - höjden nights (afterwork) 17.00</Heading3>
-      <Separator className="w-full max-w-[30rem] my-4"/>
-      <Heading3>9-11 April - höjden sessions (workshop)</Heading3>
+
+      <Heading3 className="pt-6">5 April - höjden nights (afterwork) 17.00</Heading3>
+
+      <Heading3 className="pt-6">9-11 April - höjden sessions (workshop)</Heading3>
       <p>Read more here: <ParagraphLink href="https://en.hojden.house/daglig-traening">https://en.hojden.house/daglig-traening</ParagraphLink></p>
-      <Separator className="w-full max-w-[30rem] my-4"/>
-      <Heading3>16-18 April - höjden sessions (workshop)</Heading3>
+
+      <Heading3 className="pt-6">16-18 April - höjden sessions (workshop)</Heading3>
       <p>Read more here: <ParagraphLink href="https://en.hojden.house/daglig-traening">https://en.hojden.house/daglig-traening</ParagraphLink></p>
-      <Separator className="w-full max-w-[30rem] my-4"/>
-      <Heading3>27 April - höjden festival</Heading3>
+
+      <Heading3 className="pt-6">27 April - höjden festival</Heading3>
       <p>Festival by höjdens members for all!</p>
-      <Separator className="w-full max-w-[30rem] my-4"/>
-      <Heading3>3 May - höjden nights (afterwork) 17.00</Heading3>
+
+      <Heading3 className="pt-6">3 May - höjden nights (afterwork) 17.00</Heading3>
     </PageContent>
   );
 }
