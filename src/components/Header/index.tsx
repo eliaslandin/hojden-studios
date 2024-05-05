@@ -15,6 +15,8 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu"
 import { DropDownLink } from "./DropDownLink";
+import { ChevronDown } from "lucide-react";
+import { Separator } from "../ui/separator";
 
 export const Header = ({
   className,
@@ -38,15 +40,23 @@ export const Header = ({
               <NavigationMenuItem>
                 <NavItem href="/">Aktuellt</NavItem>
               </NavigationMenuItem>
+              <Separator className="h-10 bg-hojden-green" orientation="vertical"/>
               <NavigationMenuItem>
                 <NavItem href="/kalender">Kalender</NavItem>
               </NavigationMenuItem>
+              <Separator className="h-10 bg-hojden-green" orientation="vertical"/>
               <NavigationMenuItem>
                 <NavItem href="/hojden-sessions">höjden sessions</NavItem>
               </NavigationMenuItem>
+              <Separator className="h-10 bg-hojden-green" orientation="vertical"/>
               <NavigationMenuItem>
                 <DropdownMenu>
-                  <DropdownMenuTrigger>Medlemskap</DropdownMenuTrigger>
+                  <DropdownMenuTrigger className="hover:text-hojden-lavender duration-200 [&_svg]:data-[state=open]:rotate-180">
+                    <div className="flex items-center gap-1">
+                      <ChevronDown className="h-4 w-4 text-hojden-green" />
+                      <p>Medlemskap</p>
+                    </div>
+                  </DropdownMenuTrigger>
                   <DropdownMenuContent>
                     <DropdownMenuItem className="w-full">
                       <DropDownLink href="/bli-medlem">Bli medlem</DropDownLink>
@@ -62,9 +72,15 @@ export const Header = ({
                   </DropdownMenuContent>
                 </DropdownMenu>
               </NavigationMenuItem>
+              <Separator className="h-10 bg-hojden-green" orientation="vertical"/>
               <NavigationMenuItem>
                 <DropdownMenu>
-                  <DropdownMenuTrigger>Om höjden</DropdownMenuTrigger>
+                <DropdownMenuTrigger className="hover:text-hojden-lavender duration-200 [&_svg]:data-[state=open]:rotate-180">
+                    <div className="flex items-center gap-1">
+                      <ChevronDown className="h-4 w-4 text-hojden-green" />
+                      <p>Om höjden</p>
+                    </div>
+                  </DropdownMenuTrigger>
                   <DropdownMenuContent>
                     <DropdownMenuItem>
                     <DropDownLink href="/om-hoejden">Verksamhet</DropDownLink>
@@ -80,9 +96,11 @@ export const Header = ({
                   </DropdownMenuContent>
                 </DropdownMenu>
               </NavigationMenuItem>
+              <Separator className="h-10 bg-hojden-green" orientation="vertical"/>
               <NavigationMenuItem>
                 <NavItem href="/newsletter">Nyhetsbrev</NavItem>
               </NavigationMenuItem>
+              <Separator className="h-10 bg-hojden-green" orientation="vertical"/>
               <NavigationMenuItem>
                 <NavItem href="/supportmedlem" className="border-0">Supportmedlem</NavItem>
               </NavigationMenuItem>
