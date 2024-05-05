@@ -17,8 +17,8 @@ export const NavItem = ({
   href: string;
 }) => {
   return (
-    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "hover:bg-transparent hover:text-hojden-lavender border-r py-6 border-hojden-green rounded-none", className)}>
-      <Link href={href} className="block px-3 text-lg font-light">{children}</Link>                
+    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "hover:bg-transparent hover:text-hojden-lavender border-none", className)}>
+      <Link href={href} className="text-lg font-light">{children}</Link>                
     </NavigationMenuLink>
   );
 };

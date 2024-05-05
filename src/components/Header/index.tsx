@@ -3,13 +3,18 @@
 import Image from "next/image";
 import { NavItem } from "./NavItem";
 import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu"
-import { DropDrownTrigger } from "./DropDownTrigger";
-import { DropDrownLink } from "./DropDownLink";
+import { DropDownLink } from "./DropDownLink";
 
 export const Header = ({
   className,
@@ -29,7 +34,7 @@ export const Header = ({
             />
           </div>
           <NavigationMenu>
-            <NavigationMenuList>
+            <NavigationMenuList className="text-lg gap-4">
               <NavigationMenuItem>
                 <NavItem href="/">Aktuellt</NavItem>
               </NavigationMenuItem>
@@ -37,39 +42,43 @@ export const Header = ({
                 <NavItem href="/kalender">Kalender</NavItem>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavItem href="/daglig-traening">höjden sessions</NavItem>
+                <NavItem href="/hojden-sessions">höjden sessions</NavItem>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <DropDrownTrigger>Medlemskap</DropDrownTrigger>
-                <NavigationMenuContent className="text-hojden-green px-4">
-                  <ul>
-                    <li>
-                      <DropDrownLink href="/bli-medlem">Bli medlem</DropDrownLink>
-                    </li>
-                    <li>
-                      <DropDrownLink href="/lokaler-och-bilder">Bilder och specifikationer av lokaler</DropDrownLink>
-                    </li>
-                    <li>
-                      <DropDrownLink href="/hyra-dansstudio">Vår studio</DropDrownLink>
-                    </li>
-                  </ul>
-                </NavigationMenuContent>
+                <DropdownMenu>
+                  <DropdownMenuTrigger>Medlemskap</DropdownMenuTrigger>
+                  <DropdownMenuContent>
+                    <DropdownMenuItem className="w-full">
+                      <DropDownLink href="/bli-medlem">Bli medlem</DropDownLink>
+                    </DropdownMenuItem>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuItem>
+                      <DropDownLink href="/lokaler">Våra lokaler</DropDownLink>                      
+                    </DropdownMenuItem>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuItem>
+                      <DropDownLink href="/studio">Vår studio</DropDownLink>
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <DropDrownTrigger>Om höjden</DropDrownTrigger>
-                <NavigationMenuContent className="text-hojden-green px-4">
-                  <ul>
-                    <li>
-                      <DropDrownLink href="/om-hoejden">Verksamhet</DropDrownLink>
-                    </li>
-                    <li>
-                      <DropDrownLink href="/styrelsen">Styrelsen</DropDrownLink>
-                    </li>
-                    <li>
-                      <DropDrownLink href="/medlemmar">Kontakt och hitta hit</DropDrownLink>
-                    </li>
-                  </ul>
-                </NavigationMenuContent>
+                <DropdownMenu>
+                  <DropdownMenuTrigger>Om höjden</DropdownMenuTrigger>
+                  <DropdownMenuContent>
+                    <DropdownMenuItem>
+                    <DropDownLink href="/om-hoejden">Verksamhet</DropDownLink>
+                    </DropdownMenuItem>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuItem>
+                      <DropDownLink href="/styrelsen">Styrelsen</DropDownLink>                    
+                    </DropdownMenuItem>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuItem>
+                      <DropDownLink href="/medlemmar">Kontakt och hitta hit</DropDownLink>
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavItem href="/newsletter">Nyhetsbrev</NavItem>
