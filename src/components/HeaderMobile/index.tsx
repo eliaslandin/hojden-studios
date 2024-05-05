@@ -50,7 +50,7 @@ export const HeaderMobile = ({
             <span className="sr-only">Öppna navigationsmeny</span>
           </Button>
         </DialogTrigger>
-        <DialogContent className="w-full h-full overflow-scroll justify-center items-start bg-hojden-beige text-xl font-normal border-0">
+        <DialogContent className="w-full h-full overflow-scroll justify-center items-start bg-hojden-beige text-2xl font-normal border-0">
           <NavigationMenu orientation="vertical">
             <NavigationMenuList className="flex-col gap-4 pt-10">
               
@@ -82,7 +82,7 @@ export const HeaderMobile = ({
                 <Collapsible className="flex flex-col items-center">
                     <CollapsibleTrigger className="[&_svg]:data-[state=open]:rotate-180">
                       <div className="flex items-center gap-2">
-                        <ChevronDown className="h-4 w-4 text-hojden-green" />
+                        <ChevronDown className="h-5 w-5 text-hojden-green" />
                         <p>Medlemmar</p>
                       </div>
                     </CollapsibleTrigger>
@@ -114,7 +114,7 @@ export const HeaderMobile = ({
                 <Collapsible className="flex flex-col items-center">
                     <CollapsibleTrigger className="[&_svg]:data-[state=open]:rotate-180">
                       <div className="flex items-center gap-2">
-                        <ChevronDown className="h-4 w-4 text-hojden-green" />
+                        <ChevronDown className="h-5 w-5 text-hojden-green" />
                         <p>Om höjden</p>
                       </div>
                     </CollapsibleTrigger>
