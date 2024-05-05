@@ -6,13 +6,13 @@ import { Heading2 } from "@/components/Heading2";
 const content = {
   en: () => (
     <>
-  <Heading1 className="text-hojden-orange">Kontakta oss</Heading1>
+  <Heading1 className="text-hojden-orange">Contact us</Heading1>
       <p>
       För frågor gällande höjdens verksamhet, frågor till Släktet Ekonomisk förening och frågor gällande bokning av studios: <ParagraphLink href="mailto:info@hojden.house">info@hojden.house</ParagraphLink>
       <br/><br/>
-      Kontakta oss också på <ParagraphLink href="https://www.facebook.com/hojdenostberga/">Facebook</ParagraphLink> eller via kontaktformuläret nedan. 
-      </p>
+      Kontakta oss också på <ParagraphLink href="https://www.facebook.com/hojdenostberga/">Facebook</ParagraphLink> eller via kontaktformuläret nedan. <br/>
       <br/>
+      </p>
       <Heading2>Hitta hit</Heading2>
       <p>
       Du hittar oss på Östbergatorget 21, 125 73 Älvsjö.<br/>
@@ -35,9 +35,9 @@ const content = {
       <p>
       För frågor gällande höjdens verksamhet, frågor till Släktet Ekonomisk förening och frågor gällande bokning av studios: <ParagraphLink href="mailto:info@hojden.house">info@hojden.house</ParagraphLink>
       <br/><br/>
-      Kontakta oss också på <ParagraphLink href="https://www.facebook.com/hojdenostberga/">Facebook</ParagraphLink> eller via kontaktformuläret nedan. 
-      </p>
+      Kontakta oss också på <ParagraphLink href="https://www.facebook.com/hojdenostberga/">Facebook</ParagraphLink> eller via kontaktformuläret nedan. <br/>
       <br/>
+      </p>
       <Heading2>Hitta hit</Heading2>
       <p>
       Du hittar oss på Östbergatorget 21, 125 73 Älvsjö.<br/>
@@ -58,8 +58,7 @@ const content = {
 
 type SupportedLocale = 'en' | 'sv';
 
-export default function Page({ params }) {
-  console.log(params);
+export default function Page({ params }: { params: { locale: SupportedLocale }}) {
   const { locale } = params;
 
   return (
