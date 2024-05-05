@@ -29,8 +29,8 @@ export const HeaderMobile = ({
   className?: string;
 }) => {
   return (
-    <header className="sticky top-0 w-full sm:hidden container">
-      <Link href="/">
+    <header className="flex flex-col top-0 w-full md:hidden container">
+      <Link href="/" className="self-center">
         <Image
           alt="Höjden studios logga"
           src="/hojden_webblogga.jpg"
@@ -50,7 +50,7 @@ export const HeaderMobile = ({
             <span className="sr-only">Öppna navigationsmeny</span>
           </Button>
         </DialogTrigger>
-        <DialogContent className="w-full h-full overflow-scroll justify-center items-start bg-hojden-beige text-2xl font-normal border-0">
+        <DialogContent className="w-full max-w-none h-full overflow-scroll justify-center items-start bg-hojden-beige text-2xl font-normal border-0">
           <NavigationMenu orientation="vertical">
             <NavigationMenuList className="flex-col gap-4 pt-10">
               
