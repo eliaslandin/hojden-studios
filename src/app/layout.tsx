@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { HeaderMobile } from "@/components/HeaderMobile";
+import { LocaleSelectOverlay } from "@/components/LocaleSelectOverlay";
 
 const barlow = Barlow({ 
   weight: ["200", "500", "700"], 
@@ -24,6 +25,7 @@ export default function RootLayout({
   return (
     <html>
       <body className={`${barlow.className} relative flex flex-col text-hojden-green font-light bg-hojden-beige`}>
+        <LocaleSelectOverlay/>
         <div className={`min-h-screen bg-white pb-footerheight`}>
           <HeaderMobile/>
           <Header/>

@@ -10,13 +10,13 @@ export default createMiddleware({
   
   domains: [
     {
-      domain: 'en.localhost:3000',
+      domain: `en.${process.env.NEXT_PUBLIC_VERCEL_URL}`,
       defaultLocale: 'en',
       // Optionally restrict the locales available on this domain
       locales: ['en']
     },
     {
-      domain: 'localhost:3000',
+      domain: process.env.NEXT_PUBLIC_VERCEL_URL!,
       defaultLocale: 'sv',
       locales: ['sv']
       // If there a re no `locales` specified on a domain,
