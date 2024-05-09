@@ -1,7 +1,7 @@
 "use client"
 
 import { cn } from "@/lib/utils";
-import { LocaleSelectButton } from "./LocaleSeletButton";
+import { LocaleSelectButton } from "./LocaleSelectButton";
 
 export const LocaleSelectOverlay = ({
   className

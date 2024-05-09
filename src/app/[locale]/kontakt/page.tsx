@@ -11,8 +11,7 @@ const content = {
   <Heading1 className="text-hojden-orange">Contact us</Heading1>
       <p>
       For questions regarding activities at höjden, questions about Släktet Ekonomisk Förening, or questions about booking studios: <ParagraphLink href="mailto:info@hojden.house">info@hojden.house</ParagraphLink>
-      <br/><br/>
-      You can also contact us via the contact form below.<br/>
+      <br/>
       <br/>
       </p>
       <Heading2>How to get here</Heading2>
@@ -38,7 +37,7 @@ const content = {
       <p>
       För frågor gällande höjdens verksamhet, frågor till Släktet Ekonomisk förening och frågor gällande bokning av studios: <ParagraphLink href="mailto:info@hojden.house">info@hojden.house</ParagraphLink>
       <br/><br/>
-      Kontakta oss också på <ParagraphLink href="https://www.facebook.com/hojdenostberga/">Facebook</ParagraphLink> eller via kontaktformuläret nedan. <br/>
+      Kontakta oss också på <ParagraphLink href="https://www.facebook.com/hojdenostberga/">Facebook</ParagraphLink>.<br/>
       <br/>
       </p>
       <Heading2>Hitta hit</Heading2>

@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
 import { Button } from "@/components/ui/button";
-import { ReactNode } from 'react';
-import {usePathname} from '@/navigation';
+import { ReactNode } from "react";
+import { usePathname } from "@/navigation";
 
 export const LocaleSelectButton = ({
   className,
   children,
-  localeValue
+  localeValue,
 }: {
   className?: string;
   children: ReactNode;
@@ -17,11 +17,11 @@ export const LocaleSelectButton = ({
 
   const handleClick = () => {
     if (localeValue === "en") {
-      window.location.href = `en.hojden-studios.vercel.app${pathname}`
+      window.location.href = `//en.${process.env.NEXT_PUBLIC_VERCEL_URL || "localhost:3000"}${pathname}`;
     } else {
-      window.location.href = `hojden-studios.vercel.app${pathname}`
+      window.location.href = `//${process.env.NEXT_PUBLIC_VERCEL_URL || "localhost:3000"}${pathname}`;
     }
-  }
+  };
 
   return (
     <Button variant="ghost" onClick={() => handleClick()}>

@@ -32,9 +32,9 @@ export default function LocaleLayout({
   unstable_setRequestLocale(locale)
 
   return (
-    <html>
+    <html lang={locale}>
       <body className={`${barlow.className} relative flex flex-col text-hojden-green font-light bg-hojden-beige`}>
-        <LocaleSelectOverlay/>
+        <LocaleSelectOverlay className="hidden md:flex"/>
         <div className={`min-h-screen bg-white pb-footerheight`}>
           <HeaderMobile/>
           <Header/>
