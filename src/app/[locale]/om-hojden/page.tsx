@@ -3,6 +3,7 @@ import { HojdenButton } from "@/components/HojdenButton";
 import { PageContent } from "@/components/PageContent";
 import { HojdenImage } from "@/components/HojdenImage";
 import { SupportedLocale } from "@/types"
+import { unstable_setRequestLocale } from "next-intl/server";
 
 const content = {
   en: () => (
@@ -40,6 +41,8 @@ const content = {
 
 export default function Page({ params }: { params: { locale: SupportedLocale }}) {
   const { locale } = params;
+  unstable_setRequestLocale(locale);
+  
   return (
     <PageContent>
       {content[locale as SupportedLocale]()}

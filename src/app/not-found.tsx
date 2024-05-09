@@ -1,3 +1,5 @@
+'use client'
+
 import { Heading1 } from "@/components/Heading1";
 import { PageContent } from "@/components/PageContent";
 
@@ -14,7 +16,7 @@ const content = {
   )
 }
 
-export default function NotFoundPage() {
+export default function NotFound() {
 
   return (
     <PageContent>

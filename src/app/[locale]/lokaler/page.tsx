@@ -4,6 +4,7 @@ import { PageContent } from "@/components/PageContent";
 import { ColumnFlexOne } from "@/components/layouts/ColumnFlexOne";
 import { TwoColumnLayout } from "@/components/layouts/TwoColumnLayout";
 import { SupportedLocale } from "@/types";
+import { unstable_setRequestLocale } from "next-intl/server";
 
 const content = {
   en: () => (
@@ -200,6 +201,8 @@ const content = {
 
 export default function Page({ params }: { params: { locale: SupportedLocale }}) {
   const { locale } = params;
+  unstable_setRequestLocale(locale);
+  
   return (
     <PageContent>
       {content[locale as SupportedLocale]()}

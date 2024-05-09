@@ -2,6 +2,7 @@ import { Heading1 } from "@/components/Heading1";
 import { PageContent } from "@/components/PageContent";
 import { Heading3 } from "@/components/Heading3";
 import { SupportedLocale } from "@/types";
+import { unstable_setRequestLocale } from "next-intl/server";
 
 const content = {
   en: () => (
@@ -72,6 +73,8 @@ const content = {
 
 export default function Page({ params }: { params: { locale: SupportedLocale }}) {
   const { locale } = params;
+  unstable_setRequestLocale(locale);
+  
   return (
     <PageContent>
       {content[locale as SupportedLocale]()}

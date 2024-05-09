@@ -8,6 +8,7 @@ import { ParagraphLink } from '@/components/ParagraphLink';
 import { Post } from '@/components/Post';
 import { PostDate } from '@/components/Post/PostDate';
 import { SupportedLocale } from "@/types";
+import { unstable_setRequestLocale } from 'next-intl/server';
 
 const content = {
   en: () => (
@@ -370,6 +371,8 @@ const content = {
 
 export default function Page({ params }: { params: { locale: SupportedLocale }}) {
   const { locale } = params;
+  unstable_setRequestLocale(locale);
+  
   return (
     <PageContent className="max-w-[42rem]">
       {content[locale as SupportedLocale]()}
