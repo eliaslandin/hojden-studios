@@ -19,37 +19,7 @@ import { ChevronDown } from "lucide-react";
 import { Separator } from "../ui/separator";
 import { Link } from "@/navigation";
 import { useLocale } from "next-intl";
-
-const content = {
-  en: {
-    Aktuellt: "Current",
-    Kalender: "Calendar",
-    Medlemskap: "Membership",
-    Bli_medlem: "Become a member",
-    Vara_lokaler: "Photos and specifications of our spaces",
-    Var_studio: "The shared studio",
-    Om_hojden: "About höjden",
-    Verksamhet: "Our work",
-    Styrelsen: "The board",
-    Kontakt_och_hitta_hit: "Contact us",
-    Nyhetsbrev: "Newsletter",
-    Supportmedlem: "Support Members",
-  },
-  sv: {
-    Aktuellt: "Aktuellt",
-    Kalender: "Kalender",
-    Medlemskap: "Medlemskap",
-    Bli_medlem: "Bli_medlem",
-    Vara_lokaler: "Bilder och specifikationer av lokaler",
-    Var_studio: "Vår_studio",
-    Om_hojden: "Om höjden",
-    Verksamhet: "Verksamhet",
-    Styrelsen: "Styrelsen",
-    Kontakt_och_hitta_hit: "Kontakt och hitta hit",
-    Nyhetsbrev: "Nyhetsbrev",
-    Supportmedlem: "Supportmedlem",
-  },
-};
+import { content } from "@/lib/i18n/dictionary";
 
 const NavigationMenuItemSized = ({
   children,
@@ -61,8 +31,7 @@ const NavigationMenuItemSized = ({
 
 export const Header = ({ className }: { className?: string }) => {
   const locale = useLocale();
-
-  const t = content[locale as "sv" | "en"];
+  const t = content[(locale as "sv" | "en") || "en"].header;
 
   return (
     <header className="hidden md:block">
