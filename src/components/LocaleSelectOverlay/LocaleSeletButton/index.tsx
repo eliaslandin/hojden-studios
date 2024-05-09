@@ -1,9 +1,8 @@
 "use client"
 
 import { Button } from "@/components/ui/button";
-import {useParams} from 'next/navigation';
 import { ReactNode } from 'react';
-import {useRouter, usePathname} from '@/navigation';
+import {usePathname} from '@/navigation';
 
 export const LocaleSelectButton = ({
   className,
@@ -15,13 +14,12 @@ export const LocaleSelectButton = ({
   localeValue: string;
 }) => {
   const pathname = usePathname();
-  
 
   const handleClick = () => {
     if (localeValue === "en") {
-      window.location.href = `http://en.localhost:3000${pathname}`
+      window.location.href = `${process.env.NEXT_PUBLIC_VERCEL_URL}${pathname}`
     } else {
-      window.location.href = `http://localhost:3000${pathname}`
+      window.location.href = `${process.env.NEXT_PUBLIC_VERCEL_URL}${pathname}`
     }
   }
 

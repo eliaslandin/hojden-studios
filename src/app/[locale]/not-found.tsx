@@ -1,7 +1,6 @@
 import { SupportedLocale } from "@/types";
 import { Heading1 } from "@/components/Heading1";
 import { PageContent } from "@/components/PageContent";
-import { useLocale } from "next-intl";
 
 const content = {
   en: () => (
@@ -17,7 +16,7 @@ const content = {
 }
 
 export default function NotFoundPage() {
-  const locale = useLocale()
+  const locale = "en"
 
   return (
     <PageContent>
