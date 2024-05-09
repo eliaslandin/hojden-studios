@@ -11,13 +11,14 @@ export default createMiddleware({
 
   domains: [
     {
-      domain: `en.${process.env.VERCEL_URL?.split(":")[0] || "localhost"}`,
+      domain: `en.${process.env.VERCEL_PROJECT_PRODUCTION_URL?.split(":")[0] || "localhost"}`,
       defaultLocale: "en",
       // Optionally restrict the locales available on this domain
       locales: ["en"],
     },
     {
-      domain: process.env.VERCEL_URL?.split(":")[0] || "localhost",
+      domain:
+        process.env.VERCEL_PROJECT_PRODUCTION_URL?.split(":")[0] || "localhost",
       defaultLocale: "sv",
       locales: ["sv"],
       // If there a re no `locales` specified on a domain,
