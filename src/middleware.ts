@@ -10,13 +10,13 @@ export default createMiddleware({
   
   domains: [
     {
-      domain: `en.${process.env.NEXT_PUBLIC_VERCEL_URL}`,
+      domain: `en.hojden-studios.vercel.app`,
       defaultLocale: 'en',
       // Optionally restrict the locales available on this domain
       locales: ['en']
     },
     {
-      domain: process.env.NEXT_PUBLIC_VERCEL_URL!,
+      domain: "hojden-studios.vercel.app",
       defaultLocale: 'sv',
       locales: ['sv']
       // If there a re no `locales` specified on a domain,

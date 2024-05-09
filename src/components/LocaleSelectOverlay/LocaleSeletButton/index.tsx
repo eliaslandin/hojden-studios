@@ -17,9 +17,9 @@ export const LocaleSelectButton = ({
 
   const handleClick = () => {
     if (localeValue === "en") {
-      window.location.href = `en.${process.env.NEXT_PUBLIC_VERCEL_URL}${pathname}`
+      window.location.href = `en.hojden-studios.vercel.app${pathname}`
     } else {
-      window.location.href = `${process.env.NEXT_PUBLIC_VERCEL_URL}${pathname}`
+      window.location.href = `hojden-studios.vercel.app${pathname}`
     }
   }
 
