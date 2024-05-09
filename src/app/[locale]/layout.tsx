@@ -34,7 +34,7 @@ export default function LocaleLayout({
   return (
     <html lang={locale}>
       <body className={`${barlow.className} relative flex flex-col text-hojden-green font-light bg-hojden-beige`}>
-        <LocaleSelectOverlay className="hidden sm:flex"/>
+        <LocaleSelectOverlay className="hidden md:flex"/>
         <div className={`min-h-screen bg-white pb-footerheight`}>
           <HeaderMobile/>
           <Header/>
