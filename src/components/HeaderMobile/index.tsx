@@ -22,6 +22,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible"
+import { LocaleSelectOverlay } from "../LocaleSelectOverlay";
 
 export const HeaderMobile = ({
   className,
@@ -160,11 +161,9 @@ export const HeaderMobile = ({
 
             </NavigationMenuList>
           </NavigationMenu>
-          <DialogFooter className="self-end">
+          <DialogFooter className="self-end relative pb-20">
             <DialogClose asChild>
-              <Button type="button" variant="secondary">
-                Close
-              </Button>
+            <LocaleSelectOverlay />
             </DialogClose>
           </DialogFooter>
         </DialogContent>
