@@ -17,9 +17,9 @@ export const LocaleSelectButton = ({
 
   const handleClick = () => {
     if (localeValue === "en") {
-      window.location.href = `//en.${process.env.NEXT_PUBLIC_VERCEL_URL || "localhost:3000"}${pathname}`;
+      window.location.href = `//en.${process.env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL || "localhost:3000"}${pathname}`;
     } else {
-      window.location.href = `//${process.env.NEXT_PUBLIC_VERCEL_URL || "localhost:3000"}${pathname}`;
+      window.location.href = `//${process.env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL || "localhost:3000"}${pathname}`;
     }
   };
 
