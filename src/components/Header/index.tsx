@@ -51,6 +51,14 @@ const content = {
   },
 };
 
+const NavigationMenuItemSized = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => {
+  return <NavigationMenuItem className="w-max">{children}</NavigationMenuItem>;
+};
+
 export const Header = ({ className }: { className?: string }) => {
   const locale = useLocale();
 
@@ -72,35 +80,35 @@ export const Header = ({ className }: { className?: string }) => {
         </div>
         <NavigationMenu>
           <NavigationMenuList className="text-lg gap-4">
-            <NavigationMenuItem>
+            <NavigationMenuItemSized>
               <NavItem href="/">{t["Aktuellt"]}</NavItem>
-            </NavigationMenuItem>
+            </NavigationMenuItemSized>
             <Separator
               className="h-10 bg-hojden-green"
               orientation="vertical"
             />
-            <NavigationMenuItem>
+            <NavigationMenuItemSized>
               <NavItem href="/kalender">{t["Kalender"]}</NavItem>
-            </NavigationMenuItem>
+            </NavigationMenuItemSized>
             <Separator
               className="h-10 bg-hojden-green"
               orientation="vertical"
             />
-            <NavigationMenuItem>
+            <NavigationMenuItemSized>
               <NavItem href="/hojden-sessions">höjden sessions</NavItem>
-            </NavigationMenuItem>
+            </NavigationMenuItemSized>
             <Separator
               className="h-10 bg-hojden-green"
               orientation="vertical"
             />
-            <NavigationMenuItem>
+            <NavigationMenuItemSized>
               <NavItem href="/drift">drift</NavItem>
-            </NavigationMenuItem>
+            </NavigationMenuItemSized>
             <Separator
               className="h-10 bg-hojden-green"
               orientation="vertical"
             />
-            <NavigationMenuItem>
+            <NavigationMenuItemSized>
               <DropdownMenu>
                 <DropdownMenuTrigger className="hover:text-hojden-lavender duration-200 [&_svg]:data-[state=open]:rotate-180">
                   <div className="flex items-center gap-1">
@@ -128,12 +136,12 @@ export const Header = ({ className }: { className?: string }) => {
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
-            </NavigationMenuItem>
+            </NavigationMenuItemSized>
             <Separator
               className="h-10 bg-hojden-green"
               orientation="vertical"
             />
-            <NavigationMenuItem>
+            <NavigationMenuItemSized>
               <DropdownMenu>
                 <DropdownMenuTrigger className="hover:text-hojden-lavender duration-200 [&_svg]:data-[state=open]:rotate-180">
                   <div className="flex items-center gap-1">
@@ -161,23 +169,23 @@ export const Header = ({ className }: { className?: string }) => {
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
-            </NavigationMenuItem>
+            </NavigationMenuItemSized>
             <Separator
               className="h-10 bg-hojden-green"
               orientation="vertical"
             />
-            <NavigationMenuItem>
+            <NavigationMenuItemSized>
               <NavItem href="/newsletter">{t["Nyhetsbrev"]}</NavItem>
-            </NavigationMenuItem>
+            </NavigationMenuItemSized>
             <Separator
               className="h-10 bg-hojden-green"
               orientation="vertical"
             />
-            <NavigationMenuItem>
+            <NavigationMenuItemSized>
               <NavItem href="/supportmedlem" className="border-0">
                 {t["Supportmedlem"]}
               </NavItem>
-            </NavigationMenuItem>
+            </NavigationMenuItemSized>
           </NavigationMenuList>
         </NavigationMenu>
       </div>
