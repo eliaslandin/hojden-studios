@@ -19,7 +19,7 @@ const content = {
   <br/>
   As a member it is possible to book höjden's studio and common spaces for events or such. The price is 100kr/hour weekdays, 50kr/hour weekends & evenings.<br/>
   </p>
-  <Heading3 className="pb-8">For questions regarding booking studios and other practical questions: <ParagraphLink href="mailto:info@hojden.house">info@hojden.house</ParagraphLink></Heading3> 
+  <p className="font-bold pb-8">For questions regarding booking studios and other practical questions: <ParagraphLink href="mailto:info@hojden.house">info@hojden.house</ParagraphLink></p> 
 
   <HojdenImage 
     src="/hojden_studio_1.jpeg" 
@@ -52,7 +52,7 @@ const content = {
   <br/>
   Medlemspriset är 100kr/timmen veckodagar, 50kr/timmen på kvällar/helger. Dansmattan går att vända för att få svart eller vitt underlag.<br/>
   </p>
-  <Heading3 className="pb-8">För frågor gällande bokning av studios: <ParagraphLink href="mailto:info@hojden.house">info@hojden.house</ParagraphLink></Heading3> 
+  <p className="font-bold pb-8">För frågor gällande bokning av studios: <ParagraphLink href="mailto:info@hojden.house">info@hojden.house</ParagraphLink></p> 
 
   <HojdenImage 
     src="/hojden_studio_1.jpeg" 
