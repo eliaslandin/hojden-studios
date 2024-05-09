@@ -17,6 +17,7 @@ import {
 import { DropDownLink } from "./DropDownLink";
 import { ChevronDown } from "lucide-react";
 import { Separator } from "../ui/separator";
+import { Link } from "@/navigation";
 
 export const Header = ({
   className,
@@ -25,15 +26,18 @@ export const Header = ({
 }) => {
   return (
     <header className="hidden md:block">
-        <div className="flex flex-col items-center container gap-1 py-3">
-          <div>
-            <Image
-              alt="Höjden studios logga"
-              src="/hojden_webblogga.jpg"
-              width={800}
-              height={119}
-              className="w-max-full"
-            />
+    <div className="flex flex-col items-center container gap-1 py-3">
+    <div>
+    <Link href="/">
+    <Image
+    alt="Höjden studios logga"
+    src="/hojden_webblogga.jpg"
+    width={800}
+    height={119}
+    className="w-max-full"
+    />
+
+    </Link>
           </div>
           <NavigationMenu>
             <NavigationMenuList className="text-lg gap-4">
