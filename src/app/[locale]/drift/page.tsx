@@ -147,7 +147,7 @@ export default function Page({
       <p className="pb-6">
         <iframe
           style={{ borderRadius: "12px" }}
-          src="https://open.spotify.com/embed/show/7BHMoWkR9sTCO4OkUkzady?utm_source=generator"
+          src="https://open.spotify.com/embed/episode/6x5oT9yWMEMafBhilRFp8b?utm_source=generator&theme=0"
           width="100%"
           height="152"
           frameBorder="0"
