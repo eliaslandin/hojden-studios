@@ -41,6 +41,106 @@ export default function Page({
       <p className="pb-6">
         drift is made possible with support from Kulturrådet
       </p>
+
+      <Heading2>
+        Episode 2: How does it shape the way we dwell? Sonja Lindgren and Oda
+        Brekke
+      </Heading2>
+      <p className="pb-6">
+        <iframe
+          style={{ borderRadius: "12px" }}
+          src="https://open.spotify.com/embed/episode/3xxZ3PcTVrvriCuk5UiqUW?utm_source=generator&theme=0"
+          width="100%"
+          height="152"
+          frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </p>
+
+      <p className="pb-6">
+        The second episode of drift dialogues starts in the middle of a
+        practice. Sonja comes from architecture and Oda from dance, they
+        discover they share many interests, but use different words. In this
+        conversation they complicate each other's means of making sense of life,
+        work and art in a society where consumption controls the way we see
+        things. How can ideas and methods alter our perception? What are the
+        limits of the formats we use when we work and how do they form the
+        potential for thinking and memorizing?
+      </p>
+      <p className="pb-6">
+        During November 2023 they met several times over a pile of papers and
+        books in höjdens studio. Listen to them read, describe and discuss their
+        own work as well as texts and performances by other artists and
+        thinkers.
+      </p>
+      <p className="pb-6">
+        Sonja Lindgren is an architect based in Stockholm, and works in the
+        fields of architecture, design and scenography. She is educated at Umeå
+        School of Architecture.
+      </p>
+      <p className="pb-6">
+        Oda Brekke is a dance artist based in Stockholm, working internationally
+        as a choreographer, writer and performer. Her choreographic work has
+        been presented at MDT, Weld and Fylkingen in Stockholm, Bergen Kjøtt and
+        Zagreb Museum of Contemporary Art and includes ‘When there’s only
+        surface left’ (2021), ‘Cut: a choreo-essay’(2023) and ‘dead dead
+        document’ (2024). Since 2018 she has organised a range of discursive
+        formats and structures for collective spaces and processes.
+      </p>
+      <p className="pb-6">Works mentioned in the episode:</p>
+      <p className="pb-6">
+        <a
+          href="https://www.skogen.pm/publication/oYXbtdaJbecXi3uxJ"
+          target="_blank"
+        >
+          Object Making- Manon Santkin
+        </a>
+        <br />
+        From the publication Art as Practice| Art as object
+      </p>
+
+      <p className="pb-6">
+        <a href="https://odabrekke.com/Cut-a-choreo-essay" target="_blank">
+          Cut: a choreo-essay- Oda Brekke
+        </a>
+        <br />
+        Performed at 14.01.2023 Kafé Mix, höjden studios
+      </p>
+
+      <p className="pb-6">
+        <a
+          href="https://urn.kb.se/resolve?urn=urn:nbn:se:umu:diva-196662"
+          target="_blank"
+        >
+          the deconstruction of the image of swedish domestic architecture
+          through ‘marginalia’- Sonja Lindgren
+        </a>
+      </p>
+
+      <p className="pb-6">
+        <a
+          href="https://www.alicechauchat.net/text-breastpiece.html"
+          target="_blank"
+        >
+          The Breast piece- Alice Chauchat & Frédéric Gies
+        </a>
+      </p>
+      <p className="pb-6">
+        Translating the Essay into Film and Installation- Nora M. Alter
+      </p>
+      <p className="pb-6">Michael Taussig- Fieldwork Notebooks</p>
+      <p className="pb-6">Sarah Vanhee- Oblivion</p>
+      <p className="pb-6">
+        <a
+          href="https://www.gabrielmaher.xyz/wonderment-domastication"
+          target="_blank"
+        >
+          "Wonderment Domastication"
+        </a>
+        , Gabriel A Maher
+      </p>
+
       <Heading2>
         Episode 1: Words with many textures: Maia Means and Stina Ehn
       </Heading2>
