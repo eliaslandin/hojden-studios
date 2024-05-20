@@ -43,6 +43,79 @@ export default function Page({
       </p>
 
       <Heading2>
+        Episode 3: A four year old birch tree told me: Paloma Madrid and Robin
+        Dingemans
+      </Heading2>
+      <p className="pb-6">
+        <iframe
+          style={{ borderRadius: "12px" }}
+          src="https://open.spotify.com/embed/episode/5IcfxdDnptvJZWwPLZS2lL?utm_source=generator&theme=0"
+          width="100%"
+          height="152"
+          frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </p>
+
+      <p className="pb-6">
+        October 2023 Paloma and Robin met in Vinterviken where they engaged in a
+        shared curiosity towards the ancient wisdom of forests and gardens. In
+        the third episode of drift dialogues you are invited to listen to their
+        practices, unfolding through mantras and stories in a rainy afternoon.
+      </p>
+      <p className="pb-6">
+        Paloma Madrid/Mar Lobos has been working in the dance field since 2005
+        as a choreographer, dance educator, dancer and artist. Recognized as an
+        active and emerging artist, she is often described in the field as the
+        "poetical body investigator," exploring the body as a medium in constant
+        (r)evolution and a producer of consciousness. Madrid's work consistently
+        delves into the intersection of collaborative art and social
+        choreography. Pioneer of Communitydance in Sweden, working with
+        participatory embodied processes since 2008 at Botkyrka community dance
+        and theater. Paloma is artistic director of Rosales, a dance company and
+        platform that investigates the spaces between oppression and resistance
+        to gather knowledge and establish a practical and theoretical framework
+        through participatory methods, moving away from polarized dance
+        practices. Her collaborations include commissioned work for Riksteatern,
+        Moderna Museet, Dramaten, The Swedish Television, SKH. Engaged in the
+        longlife process with the collective Tvillingskapet and V.C.V.T. Paloma
+        holds a Master of Fine Arts in Choreography and a Bachelor of Arts in
+        Dance Pedagogy from DOCH-SKH Stockholm University of Arts, Sweden.
+      </p>
+      <p className="pb-6">
+        Robin Dingemans is a choreographer, performer & teacher from Aotearoa, a
+        Pākehā based in Europe since 1999. Robin's work includes dance for the
+        stage, non-traditional performance spaces, video, social dances, work
+        for children, symposiums, and writing. He often collaborates with a
+        broad spectrum of artists, including dancers, dramaturges, composers,
+        writers, illustrators, video designers, psychologists, and more. His
+        practice is centered around playing with creative processes and outputs
+        which are often sociologically informed. Since 2015 explicitly committed
+        to anti-racist/bigoted imperatives informed by his tricultural
+        childhood, life in hyper diverse London and racism in Sweden and
+        internationally. His works have been commissioned and presented by many
+        different organisations in the UK, Sweden and internationally. He has
+        interpreted and collaborated with a broad spectrum of contemporary dance
+        choreographers and theatre directors since 1996, performing in works of
+        Weld Company, Fevered Sleep, Station House Opera, DV8 Physical Theatre,
+        Wally Cardona, Lito Walkey, Requardt & Rosenberg, Ricochet, Protein,
+        Theatre Rites, Yvon Bonenfant, les gens d'Uterpan and many more. He has
+        created works, supervised, taught improvisation, composition and
+        creative practices at many Conservatoires, Universities and a broad
+        spectrum of professional and community contexts internationally.
+      </p>
+      <p className="pb-6">
+        Works mentioned in the episode
+        <br />
+        <a href="https://www.iwgia.org/en/news/4511-building-alliances-in-pandemic-times-the-zapatista-journey-through-europe.html">
+          Gloria E Anzaldua- Light in the dark, zapatistas movement
+        </a>
+      </p>
+
+      <p className="pb-6">Photo: Javier Lopez</p>
+
+      <Heading2>
         Episode 2: How does it shape the way we dwell? Sonja Lindgren and Oda
         Brekke
       </Heading2>
