@@ -43,6 +43,75 @@ export default function Page({
       </p>
 
       <Heading2>
+        Episode 4: Secret missions, epic places: Karina Sarkissova and Molly
+        Engblom
+      </Heading2>
+      <p className="pb-6">
+        <iframe
+          style={{ borderRadius: "12px" }}
+          src="https://open.spotify.com/embed/episode/2VdLK2QydSbpUv87sBN3Hl?utm_source=generator&theme=0"
+          width="100%"
+          height="152"
+          frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </p>
+
+      <p className="pb-6">
+        In the fourth episode of drift dialogues Karina and Molly discuss their
+        practices, and their use of text as well as the role that spaces outside
+        of the studio and institutions play in their practices of dance,
+        curating and poetry.
+      </p>
+      <p className="pb-6">
+        They touch upon the use of montage and collage and dig into their
+        motives for making art departing from two meetings in the studio at
+        höjden, right in the beginning of 2024 where they exchanged practices by
+        sharing, leaking, and finding common points of interest.
+      </p>
+      <p className="pb-6">
+        Karina Sarkissova is an independent curator and dramaturge based in
+        Uppsala and Stockholm. She graduated in 2012 at the School for New Dance
+        Development in Amsterdam (SNDO) and in 2019 at Dutch Art Institute
+        (DAI). Karina is together with Pontus Pettersson curating the annual
+        festival My Wild Flag, as well as curating the performing arts program
+        at Norbergfestival with Olof Runsten. Karina is a cofounder of höjden in
+        Östberga, a space for artistic production. Karinas practice is
+        dramaturgical, choreographic and curatorial; she is regularly working
+        with other artists’ work and develops choreographic contexts.
+      </p>
+      <p className="pb-6">
+        molly is a dancer, choreographer and poet based in Stockholm with a BFA
+        in Dance performance from Stockholm University of the Arts (2019). molly
+        works experimentally with dance, voice and text to make work that takes
+        place in different spaces; like a body of water shifts shape, the
+        choreographic leaks in and out of stage rooms, art galleries, magazines,
+        and unconventional places e.g. outdoors. Through strange, tender and
+        shivering fictions she wants to create situations where relational and
+        poetic encounters can take place. Currently she is investigating the
+        poetics of monstrosity, abjection and desire.
+      </p>
+      <p className="pb-6">
+        <strong>Works mentioned:</strong>
+        <br />
+        And then it got legs, Jeroen Peeters
+        <br />
+        Generative Fictions, or How Dance May Teach Us Ethics, Alice Chauchat,
+        Post dance book
+        <br />
+        Red doc, Anne Carson
+        <br />
+        Kafé mix, a series of performance evenings at höjden arranged by Jennie
+        Bergsli, Stina Ehn, Lisen Pousette
+        <br />
+        Edith Ekström, graphic designer
+        <br />
+        INTER, by Karina Sarkissova. Commissioned work for the project Myths and
+        realities, a lesbian oddysé
+      </p>
+
+      <Heading2>
         Episode 3: A four year old birch tree told me: Paloma Madrid and Robin
         Dingemans
       </Heading2>
