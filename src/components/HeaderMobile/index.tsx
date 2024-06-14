@@ -86,17 +86,17 @@ export const HeaderMobile = ({ className }: { className?: string }) => {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Collapsible className="flex flex-col items-center">
+                <Collapsible className="flex flex-col items-center data-[state=open]:gap-4">
                   <CollapsibleTrigger className="[&_svg]:data-[state=open]:rotate-180">
                     <div className="flex items-center gap-2">
                       <ChevronDown className="h-5 w-5 text-hojden-green" />
                       <p>{t["Medlemskap"]}</p>
                     </div>
                   </CollapsibleTrigger>
-                  <CollapsibleContent className="flex flex-col items-center">
+                  <CollapsibleContent className="flex flex-col items-center gap-6 data-[state=open]:py-6 data-[state=open]:px-8 rounded-md bg-hojden-beige-light">
                     <NavigationMenuLink>
                       <DialogClose asChild>
-                        <Link href="/bli-medlem" className="block pt-4">
+                        <Link href="/bli-medlem">
                           {t["Bli_medlem"]}
                         </Link>
                       </DialogClose>
@@ -104,7 +104,7 @@ export const HeaderMobile = ({ className }: { className?: string }) => {
 
                     <NavigationMenuLink>
                       <DialogClose asChild>
-                        <Link href="/lokaler" className="block pt-4">
+                        <Link href="/lokaler">
                           {t["Vara_lokaler"]}
                         </Link>
                       </DialogClose>
@@ -112,7 +112,7 @@ export const HeaderMobile = ({ className }: { className?: string }) => {
 
                     <NavigationMenuLink>
                       <DialogClose asChild>
-                        <Link href="/studio" className="block pt-4">
+                        <Link href="/studio">
                           {t["Var_studio"]}
                         </Link>
                       </DialogClose>
@@ -122,17 +122,17 @@ export const HeaderMobile = ({ className }: { className?: string }) => {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Collapsible className="flex flex-col items-center">
+                <Collapsible className="flex flex-col items-center data-[state=open]:gap-4">
                   <CollapsibleTrigger className="[&_svg]:data-[state=open]:rotate-180">
                     <div className="flex items-center gap-2">
                       <ChevronDown className="h-5 w-5 text-hojden-green" />
                       <p>{t["Om_hojden"]}</p>
                     </div>
                   </CollapsibleTrigger>
-                  <CollapsibleContent className="flex flex-col items-center">
+                  <CollapsibleContent className="flex flex-col items-center gap-6 data-[state=open]:py-6 data-[state=open]:px-8 rounded-md bg-hojden-beige-light">
                     <NavigationMenuLink>
                       <DialogClose asChild>
-                        <Link href="/om-hojden" className="block pt-4">
+                        <Link href="/om-hojden">
                           {t["Verksamhet"]}
                         </Link>
                       </DialogClose>
@@ -140,7 +140,7 @@ export const HeaderMobile = ({ className }: { className?: string }) => {
 
                     <NavigationMenuLink>
                       <DialogClose asChild>
-                        <Link href="/styrelsen" className="block pt-4">
+                        <Link href="/styrelsen">
                           {t["Styrelsen"]}
                         </Link>
                       </DialogClose>
@@ -148,7 +148,7 @@ export const HeaderMobile = ({ className }: { className?: string }) => {
 
                     <NavigationMenuLink>
                       <DialogClose asChild>
-                        <Link href="/kontakt" className="block pt-4">
+                        <Link href="/kontakt">
                           {t["Kontakt_och_hitta_hit"]}
                         </Link>
                       </DialogClose>

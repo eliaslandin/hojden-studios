@@ -30,6 +30,7 @@ const config = {
         "hojden-lavender": "#a6a6e6",
         "hojden-ivory": "#FFFBF5",
         "hojden-beige": "#f5f5dc",
+        "hojden-beige-light": "#ffffef",
       },
       keyframes: {
         "accordion-down": {
