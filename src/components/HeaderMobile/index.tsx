@@ -180,7 +180,7 @@ export const HeaderMobile = ({ className }: { className?: string }) => {
           </NavigationMenu>
           <DialogFooter className="self-end relative pb-20">
             <DialogClose asChild>
-              <LocaleSelectOverlay />
+              <LocaleSelectOverlay className="right-1/2 translate-x-1/2" />
             </DialogClose>
           </DialogFooter>
         </DialogContent>
