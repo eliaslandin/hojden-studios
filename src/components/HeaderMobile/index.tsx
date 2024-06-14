@@ -52,9 +52,9 @@ export const HeaderMobile = ({ className }: { className?: string }) => {
             <span className="sr-only">Öppna navigationsmeny</span>
           </Button>
         </DialogTrigger>
-        <DialogContent className="w-full max-w-none h-full overflow-scroll justify-center items-start bg-hojden-beige text-2xl font-normal border-0">
+        <DialogContent className="w-full max-w-none h-full overflow-scroll justify-center items-start bg-hojden-beige text-2xl font-normal border-0 text-center">
           <NavigationMenu orientation="vertical">
-            <NavigationMenuList className="flex-col gap-4 pt-10">
+            <NavigationMenuList className="flex-col gap-6 pt-10">
               <NavigationMenuItem>
                 <NavigationMenuLink>
                   <DialogClose asChild>
