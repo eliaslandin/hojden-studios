@@ -13,7 +13,7 @@ export function generateStaticParams() {
 }
 
 const barlow = Barlow({ 
-  weight: ["200", "500", "700"], 
+  weight: ["300", "500", "700"], 
   subsets: ["latin"] 
 });
 
