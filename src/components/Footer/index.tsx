@@ -1,16 +1,14 @@
 import { cn } from "@/lib/utils";
 import { ParagraphLink } from "../ParagraphLink";
-import Link from "next/link";
+import { Link } from "@/navigation";
 
 export const Footer = ({
   className,
-  height
 }: {
   className?: string;
-  height: string;
 }) => {
   return (
-    <footer style={{height}} className={cn("w-full text-hojden-ivory bg-hojden-green self-end flex flex-col items-center justify-center px-4 gap-1 font-normal", className)}>
+    <footer className={cn("h-footer w-full absolute bottom-0 text-hojden-ivory bg-hojden-green self-end flex flex-col items-center justify-center px-4 gap-1 font-normal", className)}>
       <ParagraphLink href="mailto:info@hojden.house">info@hojden.house</ParagraphLink>
       <p>Östbergatorget 21, 125 73 Älvsjö</p>
       <Link 

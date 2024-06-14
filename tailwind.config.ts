@@ -12,12 +12,13 @@ const config = {
   theme: {
     screens: {
       "sm": "735px",
+      "md": "1100px"
     },
     container: {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1090px",
+        "2xl": "1100px",
       },
     },
     extend: {
@@ -44,6 +45,12 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      height: {
+        "footer": "9rem"
+      },
+      padding: {
+        "footerheight": "9rem"
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
