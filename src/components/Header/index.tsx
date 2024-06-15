@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import Image from "next/image";
 import { NavItem } from "./NavItem";
@@ -18,8 +18,9 @@ import { DropDownLink } from "./DropDownLink";
 import { ChevronDown } from "lucide-react";
 import { Separator } from "../ui/separator";
 import { Link } from "@/navigation";
-import { useLocale } from "next-intl";
 import { content } from "@/lib/i18n/dictionary";
+import { SupportedLocale } from "@/types";
+import { getLocalizedContent } from "@/lib/i18n/venueAPI/utils";
 
 const NavigationMenuItemSized = ({
   children,
@@ -29,10 +30,18 @@ const NavigationMenuItemSized = ({
   return <NavigationMenuItem className="w-max">{children}</NavigationMenuItem>;
 };
 
-export const Header = ({ className }: { className?: string }) => {
-  const locale = useLocale();
+export const Header = ({ 
+  className, 
+  locale,
+  pages
+} : 
+{ 
+  className?: string,
+  locale: SupportedLocale,
+  pages: Record<string, any>
+}) => {
   const t = content[(locale as "sv" | "en") || "en"].header;
-
+  
   return (
     <header className="hidden md:block">
       <div className="flex flex-col items-center container gap-1 py-3">
@@ -52,109 +61,56 @@ export const Header = ({ className }: { className?: string }) => {
             <NavigationMenuItemSized>
               <NavItem href="/">{t["Aktuellt"]}</NavItem>
             </NavigationMenuItemSized>
-            <Separator
-              className="h-10 bg-hojden-green"
-              orientation="vertical"
-            />
-            <NavigationMenuItemSized>
-              <NavItem href="/kalender">{t["Kalender"]}</NavItem>
-            </NavigationMenuItemSized>
-            <Separator
-              className="h-10 bg-hojden-green"
-              orientation="vertical"
-            />
-            <NavigationMenuItemSized>
-              <NavItem href="/hojden-sessions">höjden sessions</NavItem>
-            </NavigationMenuItemSized>
-            <Separator
-              className="h-10 bg-hojden-green"
-              orientation="vertical"
-            />
-            <NavigationMenuItemSized>
-              <NavItem href="/drift">drift</NavItem>
-            </NavigationMenuItemSized>
-            <Separator
-              className="h-10 bg-hojden-green"
-              orientation="vertical"
-            />
-            <NavigationMenuItemSized>
-              <DropdownMenu>
-                <DropdownMenuTrigger className="hover:text-hojden-lavender duration-200 [&_svg]:data-[state=open]:rotate-180">
-                  <div className="flex items-center gap-1">
-                    <ChevronDown className="h-4 w-4 text-hojden-green" />
-                    <p>{t["Medlemskap"]}</p>
-                  </div>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent>
-                  <DropdownMenuItem className="w-full">
-                    <DropDownLink href="/bli-medlem">
-                      {t["Bli_medlem"]}
-                    </DropDownLink>
-                  </DropdownMenuItem>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem>
-                    <DropDownLink href="/lokaler">
-                      {t["Vara_lokaler"]}{" "}
-                    </DropDownLink>
-                  </DropdownMenuItem>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem>
-                    <DropDownLink href="/studio">
-                      {t["Var_studio"]}
-                    </DropDownLink>
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-            </NavigationMenuItemSized>
-            <Separator
-              className="h-10 bg-hojden-green"
-              orientation="vertical"
-            />
-            <NavigationMenuItemSized>
-              <DropdownMenu>
-                <DropdownMenuTrigger className="hover:text-hojden-lavender duration-200 [&_svg]:data-[state=open]:rotate-180">
-                  <div className="flex items-center gap-1">
-                    <ChevronDown className="h-4 w-4 text-hojden-green" />
-                    <p>{t["Om_hojden"]} </p>
-                  </div>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent>
-                  <DropdownMenuItem>
-                    <DropDownLink href="/om-hoejden">
-                      {t["Verksamhet"]}
-                    </DropDownLink>
-                  </DropdownMenuItem>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem>
-                    <DropDownLink href="/styrelsen">
-                      {t["Styrelsen"]}
-                    </DropDownLink>
-                  </DropdownMenuItem>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem>
-                    <DropDownLink href="/medlemmar">
-                      {t["Kontakt_och_hitta_hit"]}
-                    </DropDownLink>
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-            </NavigationMenuItemSized>
-            <Separator
-              className="h-10 bg-hojden-green"
-              orientation="vertical"
-            />
-            <NavigationMenuItemSized>
-              <NavItem href="/newsletter">{t["Nyhetsbrev"]}</NavItem>
-            </NavigationMenuItemSized>
-            <Separator
-              className="h-10 bg-hojden-green"
-              orientation="vertical"
-            />
-            <NavigationMenuItemSized>
-              <NavItem href="/supportmedlem" className="border-0">
-                {t["Supportmedlem"]}
-              </NavItem>
-            </NavigationMenuItemSized>
+            {
+              pages.map((page: Record<string, any> ) => {
+                if (page.isParent) {
+                  return (
+                    <>
+                      <Separator
+                        className="h-10 bg-hojden-green"
+                        orientation="vertical"
+                      />
+                      <NavigationMenuItemSized>
+                        <DropdownMenu>
+                          <DropdownMenuTrigger className="hover:text-hojden-lavender duration-200 [&_svg]:data-[state=open]:rotate-180">
+                            <div className="flex items-center gap-1">
+                              <ChevronDown className="h-4 w-4 text-hojden-green" />
+                              <p>{page.content.title}</p>
+                            </div>
+                          </DropdownMenuTrigger>
+                          <DropdownMenuContent>
+                            {
+                              page.children?.map((childPage: Record<string, any>) => {
+                                console.log(page.childPage)
+                                return (
+                                  <DropdownMenuItem className="w-full">
+                                    <DropDownLink href={`/${childPage.slug}`}>
+                                      {childPage.content.title}
+                                    </DropDownLink>
+                                  </DropdownMenuItem>
+                                )
+                              })
+                            }
+                          </DropdownMenuContent>
+                        </DropdownMenu>
+                      </NavigationMenuItemSized>
+                    </>
+                  ) 
+                } else {
+                  return (
+                    <>
+                      <Separator
+                        className="h-10 bg-hojden-green"
+                        orientation="vertical"
+                      />
+                      <NavigationMenuItemSized>
+                        <NavItem href={`/${page.slug}`}>{page.content.title}</NavItem>
+                      </NavigationMenuItemSized>
+                    </>
+                  )
+                }
+              })
+            }
           </NavigationMenuList>
         </NavigationMenu>
       </div>
