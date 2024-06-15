@@ -1,7 +1,7 @@
 import { format } from "date-fns";
 
 export const formatDate = (date: Date | string) => {
-  const localizedDate = format(new Date(date), "P");
+  const localizedDate = format(new Date(date), "Pp");
 
   return localizedDate;
 };
