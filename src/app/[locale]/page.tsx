@@ -1,11 +1,7 @@
 import { Heading1 } from '@/components/Heading1';
 import { Heading2 } from '@/components/Heading2';
-import { Heading3 } from '@/components/Heading3';
-import { HojdenButton } from '@/components/HojdenButton';
-import { HojdenImage } from '@/components/HojdenImage';
 import { MDEditor } from '@/components/MDEditor';
 import { PageContent } from '@/components/PageContent';
-import { ParagraphLink } from '@/components/ParagraphLink';
 import { Post } from '@/components/Post';
 import { PostDate } from '@/components/Post/PostDate';
 import { getPages } from '@/lib/i18n/venueAPI/fetchers';
