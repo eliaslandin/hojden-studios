@@ -1,11 +1,9 @@
 import { format } from "date-fns";
 
-export const formatDate = (date: Date | string, withYear = false) => {
+export const formatDate = (date: Date | string) => {
   const localizedDate = format(new Date(date), "P");
 
-  return withYear
-    ? localizedDate.split("/").join(".")
-    : localizedDate.slice(0, -5).split("/").join(".");
+  return localizedDate;
 };
 
 export const formatDateLong = (date: Date | string) => {
