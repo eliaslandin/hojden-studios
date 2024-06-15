@@ -20,7 +20,8 @@ export default async function Page({ params }: { params: { locale: SupportedLoca
 
   const pages = await getFeaturedPages({});
   const events = await getFeaturedEvents({})
-  const allPosts = pages.concat(events)
+
+  const allPosts = pages ? (events ? pages.concat(events) : pages) : (events ? events : [])
   
   return (
     <PageContent className="max-w-[42rem]">
