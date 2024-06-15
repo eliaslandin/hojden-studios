@@ -14,6 +14,9 @@ export const content = {
       Nyhetsbrev: "Newsletter",
       Supportmedlem: "Support Members",
     },
+    frontPage: {
+      WelcomeMessage: "Welcome to höjden studios!"
+    }
   },
   sv: {
     header: {
@@ -30,5 +33,8 @@ export const content = {
       Nyhetsbrev: "Nyhetsbrev",
       Supportmedlem: "Supportmedlem",
     },
+    frontPage: {
+      WelcomeMessage: "Välkommen till höjden studios!"
+    }
   },
 };

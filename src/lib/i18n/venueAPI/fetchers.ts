@@ -1,5 +1,5 @@
 import { unstable_cache } from "next/cache";
-import { EventParams, createClient } from ".";
+import { EventParams, createClient } from "./";
 import { CacheTagDefinitions } from "./utils";
 // import {
 // getPublicEvent,

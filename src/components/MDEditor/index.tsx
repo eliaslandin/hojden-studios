@@ -7,7 +7,7 @@ import { TiptapEditorProps } from "./props";
 import { cn } from "@/lib/utils";
 
 export const MDEditor: React.FC<{
-  onUpdate?: (updateContent) => void;
+  onUpdate?: (updateContent: string) => void;
   content: string;
   className?: string;
   readOnly?: boolean;

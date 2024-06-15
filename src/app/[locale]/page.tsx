@@ -3,12 +3,16 @@ import { Heading2 } from '@/components/Heading2';
 import { Heading3 } from '@/components/Heading3';
 import { HojdenButton } from '@/components/HojdenButton';
 import { HojdenImage } from '@/components/HojdenImage';
+import { MDEditor } from '@/components/MDEditor';
 import { PageContent } from '@/components/PageContent';
 import { ParagraphLink } from '@/components/ParagraphLink';
 import { Post } from '@/components/Post';
 import { PostDate } from '@/components/Post/PostDate';
+import { getPages } from '@/lib/i18n/venueAPI/fetchers';
+import { getLocalizedContent } from '@/lib/i18n/venueAPI/utils';
 import { SupportedLocale } from "@/types";
 import { unstable_setRequestLocale } from 'next-intl/server';
+import { content as dictionary} from "@/lib/i18n/dictionary";
 
 const content = {
   en: () => (
@@ -369,13 +373,38 @@ const content = {
   ),
 };
 
-export default function Page({ params }: { params: { locale: SupportedLocale }}) {
+export default async function Page({ params }: { params: { locale: SupportedLocale }}) {
   const { locale } = params;
   unstable_setRequestLocale(locale);
+  const t = dictionary[(locale as "sv" | "en") || "en"].frontPage;
+
+  const pages = await getPages({});
+
+  const formatDate = (unformattedDate: string) => {
+    const year = unformattedDate.substring(2,4)
+    const month = unformattedDate.substring(5,7)
+    const day = unformattedDate.substring(8,10)
+    return `${year}/${month}/${day}`
+  }
   
   return (
     <PageContent className="max-w-[42rem]">
-      {content[locale as SupportedLocale]()}
+      <Heading1 className="pb-10">{t["WelcomeMessage"]}</Heading1>
+
+      { pages.map((page: any) => {
+        const content = getLocalizedContent(page.localizedContent)
+        const formattedDate = formatDate(page.site.createdAt)
+
+        return (
+          <Post key={page.id}>
+            <PostDate>{formattedDate}</PostDate>
+            <Heading2>{content.content.title}</Heading2>
+              <MDEditor
+                content={content.content.content}
+              />
+          </Post>
+        )
+      })}
     </PageContent>
   )
 }
