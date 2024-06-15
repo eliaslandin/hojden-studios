@@ -10,6 +10,8 @@ import { SupportedLocale } from "@/types";
 import { unstable_setRequestLocale } from 'next-intl/server';
 import { content as dictionary} from "@/lib/i18n/dictionary";
 import { formatDate } from '@/components/utils/date';
+import { HojdenImage } from '@/components/HojdenImage';
+import { getPublicImage } from '@/components/utils';
 
 export default async function Page({ params }: { params: { locale: SupportedLocale }}) {
   const { locale } = params;
@@ -19,18 +21,24 @@ export default async function Page({ params }: { params: { locale: SupportedLoca
   const pages = await getFeaturedPages({});
   const events = await getFeaturedEvents({})
   const allPosts = pages.concat(events)
-  console.log(allPosts)
   
   return (
     <PageContent className="max-w-[42rem]">
       <Heading1 className="pb-10">{t["WelcomeMessage"]}</Heading1>
 
       { allPosts.map((post: any) => {
-        const content = getLocalizedContent(post.localizedContent)
+        const content = getLocalizedContent(post.localizedContent);
+        const imageUrl = getPublicImage(post.image);
 
         return (
           <Post key={post.id}>
             <Heading2>{content.content.title}</Heading2>
+            { imageUrl && 
+              <HojdenImage
+                src={imageUrl}
+                alt={post.image.altText ? post.image.altText : ""}
+              />
+            }
             { post.startDate && <PostDate>{formatDate(post.startDate)}</PostDate> }
               <MDEditor
                 content={content.content.content}
