@@ -63,7 +63,7 @@ export const Header = ({
             </NavigationMenuItemSized>
             {
               pages.map((page: Record<string, any> ) => {
-                if (page.isParent) {
+                if (page.children) {
                   return (
                     <>
                       <Separator
@@ -81,7 +81,6 @@ export const Header = ({
                           <DropdownMenuContent>
                             {
                               page.children?.map((childPage: Record<string, any>) => {
-                                console.log(page.childPage)
                                 return (
                                   <DropdownMenuItem className="w-full">
                                     <DropDownLink href={`/${childPage.slug}`}>

@@ -39,14 +39,11 @@ export default async function LocaleLayout({
   const parsedPages: Array<Record<string, any>> = []
   pages.forEach((page: Record<string, any>) => {
     if (page.parentId) { return };
-    const content = getLocalizedContent(page.localizedContent)
-    page.content = content.content
+    page.content = getLocalizedContent(page.localizedContent).content
     
     childrenPages.forEach((childPage: Record<string, any>) => {
       if (childPage.parentId === page.id) {
-        page.isParent = true;
-        const content = getLocalizedContent(childPage.localizedContent)
-        childPage.content = content.content
+        childPage.content = getLocalizedContent(childPage.localizedContent).content
 
         if (!page.children) { 
           page.children = [childPage]
