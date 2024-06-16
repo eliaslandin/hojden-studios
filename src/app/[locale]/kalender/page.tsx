@@ -1,10 +1,15 @@
 import { Heading1 } from "@/components/Heading1";
 import { Heading3 } from "@/components/Heading3";
 import { PageContent } from "@/components/PageContent";
-import { ParagraphLink } from "@/components/ParagraphLink";import { SupportedLocale } from "@/types";
+import { ParagraphLink } from "@/components/ParagraphLink";import { getEvents } from "@/lib/i18n/venueAPI/fetchers";
+import { SupportedLocale } from "@/types";
 import { unstable_setRequestLocale } from "next-intl/server";
+import { content as dictionary } from "@/lib/i18n/dictionary";
+import { getLocalizedContent } from "@/lib/i18n/venueAPI/utils";
+import { MDEditor } from "@/components/MDEditor";
+import { formatDate } from '@/components/utils/date';
 
-const content = {
+const contents = {
   en: () => (
     <>
   <Heading1 className="text-hojden-orange">Happening at höjden</Heading1>
@@ -55,13 +60,30 @@ const content = {
   ),
 };
 
-export default function Page({ params }: { params: { locale: SupportedLocale }}) {
+export default async function Page({ params }: { params: { locale: SupportedLocale }}) {
   const { locale } = params;
   unstable_setRequestLocale(locale);
+  const t = dictionary[locale].calendar;
+
+  const events = await getEvents({});
+  events.reverse()
+  console.log(events)
 
   return (
     <PageContent className="sm:items-center">
-    {content[locale as SupportedLocale]()}
+      <Heading1 className="text-hojden-orange">{t["pageTitle"]}</Heading1>
+      {
+        events.map((event: Record<string, any>) => {
+          const content = getLocalizedContent(event.localizedContent).content
+          console.log(content)
+          return (
+            <>
+              <Heading3 className="pt-6">{content.title} - {formatDate(event.startDate)}</Heading3>
+              { content.content && <MDEditor className="sm:text-center" content={content.content}/> }
+            </>
+          )
+        })
+      }
     </PageContent>
   );
 }

@@ -16,6 +16,9 @@ export const content = {
     },
     frontPage: {
       WelcomeMessage: "Welcome to höjden studios!"
+    },
+    calendar: {
+      pageTitle: "Happening at höjden"
     }
   },
   sv: {
@@ -35,6 +38,9 @@ export const content = {
     },
     frontPage: {
       WelcomeMessage: "Välkommen till höjden studios!"
+    },
+    calendar: {
+      pageTitle: "Händer på höjden"
     }
   },
 };
