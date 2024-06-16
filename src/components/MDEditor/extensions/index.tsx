@@ -13,23 +13,23 @@ import { Markdown } from "tiptap-markdown";
 
 import { InputRule } from "@tiptap/core";
 import Youtube from "@tiptap/extension-youtube";
-export const h3Style = "text-xl sm:text-3xl font-bold leading-6 py-4";
+export const h3Style = "text-base font-normal mt-4";
 
 export const TiptapExtensions = [
   StarterKit.configure({
     bulletList: {
       HTMLAttributes: {
-        class: "list-disc list-outside leading-3 ml-4",
+        class: "list-disc list-outside leading-6 ml-4",
       },
     },
     orderedList: {
       HTMLAttributes: {
-        class: "list-decimal list-outside leading-3 -mt-2",
+        class: "list-decimal list-outside leading-6",
       },
     },
     listItem: {
       HTMLAttributes: {
-        class: "leading-normal -mb-2",
+        class: "leading-6",
       },
     },
     blockquote: {
@@ -58,7 +58,7 @@ export const TiptapExtensions = [
     gapcursor: false,
     paragraph: {
       HTMLAttributes: {
-        class: "pb-4 leading-6",
+        class: "leading-6",
       },
     },
   }),
