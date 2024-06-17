@@ -8,8 +8,8 @@ export const PostDate = ({
   children: React.ReactNode;
 }) => {
   return (
-    <div className={cn("flex justify-end", className)}>
-      <p className="text-xl font-normal text-hojden-orange">{children}</p>
+    <div className={cn("flex pb-2", className)}>
+      <p className="text-base font-normal text-hojden-orange">{children}</p>
     </div>
   );
 };
