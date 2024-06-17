@@ -67,7 +67,6 @@ export default async function Page({ params }: { params: { locale: SupportedLoca
 
   const events = await getEvents({});
   events.reverse()
-  console.log(events)
 
   return (
     <PageContent className="sm:items-center">
