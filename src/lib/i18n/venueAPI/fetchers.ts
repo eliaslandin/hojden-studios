@@ -16,7 +16,7 @@ const getPublicProducts = () => [];
 const getPublicProduct = () => ({});
 
 const DEFAULT_VALIDATION_TIME = 6;
-const SITE_NAME = process.env.SITE_KEY || "fylkingen";
+const SITE_NAME = process.env.SITE_KEY || "hojden";
 
 const client = createClient();
 
