@@ -78,7 +78,6 @@ export default async function Page({ params }: { params: { locale: SupportedLoca
           return (
             <>
               <Heading3 className="mt-6">{content.title} - {formatDate(event.startDate)}</Heading3>
-              { content.content && <MDEditor className="sm:text-center" content={content.content}/> }
             </>
           )
         })
