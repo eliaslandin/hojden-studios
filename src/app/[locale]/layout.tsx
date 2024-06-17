@@ -61,7 +61,7 @@ export default async function LocaleLayout({
       <body className={`${barlow.className} relative flex flex-col text-hojden-green font-light bg-hojden-beige`}>
         <LocaleSelectOverlay className="hidden md:flex"/>
         <div className={`min-h-screen bg-white pb-footerheight`}>
-          <HeaderMobile/>
+          <HeaderMobile locale={locale} pages={parsedPages}/>
           <Header locale={locale} pages={parsedPages}/>
           {children}
         </div>

@@ -25,9 +25,17 @@ import {
 import { LocaleSelectOverlay } from "../LocaleSelectOverlay";
 import { content } from "@/lib/i18n/dictionary";
 import { useLocale } from "next-intl";
+import { SupportedLocale } from "@/types";
 
-export const HeaderMobile = ({ className }: { className?: string }) => {
-  const locale = useLocale();
+export const HeaderMobile = ({ 
+  className,
+  locale,
+  pages
+}: { 
+  className?: string,
+  locale: SupportedLocale,
+  pages: Record<string, any>
+}) => {
   const t = content[(locale as "sv" | "en") || "en"].header;
 
   return (
@@ -65,117 +73,53 @@ export const HeaderMobile = ({ className }: { className?: string }) => {
                 </NavigationMenuLink>
               </NavigationMenuItem>
 
-              <NavigationMenuItem>
-                <NavigationMenuLink>
-                  <DialogClose asChild>
-                    <Link href="/kalender" className="block">
-                      {t["Kalender"]}
-                    </Link>
-                  </DialogClose>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
+              {
+                pages.map((page: Record<string, any>) => {
+                  if (page.children) {
+                    return (
+                      <NavigationMenuItem>
+                        <Collapsible className="flex flex-col items-center data-[state=open]:gap-4">
+                          <CollapsibleTrigger className="[&_svg]:data-[state=open]:rotate-180">
+                            <div className="flex items-center gap-2">
+                              <ChevronDown className="h-5 w-5 text-hojden-green" />
+                              <p>{page.content.title}</p>
+                            </div>
+                          </CollapsibleTrigger>
+                          <CollapsibleContent className="flex flex-col items-center gap-6 data-[state=open]:py-6 data-[state=open]:px-8 rounded-md bg-hojden-beige-light">
+                            {
+                              page.children.map((childPage: Record<string, any>) => {
+                                return (
+                                  <NavigationMenuLink>
+                                    <DialogClose asChild>
+                                      <Link href={`/${childPage.slug}`}>
+                                        {childPage.content.title}
+                                      </Link>
+                                    </DialogClose>
+                                  </NavigationMenuLink>
+                                )
+                              })
+                            }
 
-              <NavigationMenuItem>
-                <NavigationMenuLink>
-                  <DialogClose asChild>
-                    <Link href="/hojden-sessions" className="block">
-                      höjden sessions
-                    </Link>
-                  </DialogClose>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
+                          </CollapsibleContent>
+                        </Collapsible>
+                      </NavigationMenuItem>
+                    )
+                  } else {
+                    return (
+                      <NavigationMenuItem>
+                        <NavigationMenuLink>
+                          <DialogClose asChild>
+                            <Link href={page.slug} className="block">
+                              {page.content.title}
+                            </Link>
+                          </DialogClose>
+                        </NavigationMenuLink>
+                      </NavigationMenuItem>
+                    )
+                  }
+                })
+              }
 
-              <NavigationMenuItem>
-                <Collapsible className="flex flex-col items-center data-[state=open]:gap-4">
-                  <CollapsibleTrigger className="[&_svg]:data-[state=open]:rotate-180">
-                    <div className="flex items-center gap-2">
-                      <ChevronDown className="h-5 w-5 text-hojden-green" />
-                      <p>{t["Medlemskap"]}</p>
-                    </div>
-                  </CollapsibleTrigger>
-                  <CollapsibleContent className="flex flex-col items-center gap-6 data-[state=open]:py-6 data-[state=open]:px-8 rounded-md bg-hojden-beige-light">
-                    <NavigationMenuLink>
-                      <DialogClose asChild>
-                        <Link href="/bli-medlem">
-                          {t["Bli_medlem"]}
-                        </Link>
-                      </DialogClose>
-                    </NavigationMenuLink>
-
-                    <NavigationMenuLink>
-                      <DialogClose asChild>
-                        <Link href="/lokaler">
-                          {t["Vara_lokaler"]}
-                        </Link>
-                      </DialogClose>
-                    </NavigationMenuLink>
-
-                    <NavigationMenuLink>
-                      <DialogClose asChild>
-                        <Link href="/studio">
-                          {t["Var_studio"]}
-                        </Link>
-                      </DialogClose>
-                    </NavigationMenuLink>
-                  </CollapsibleContent>
-                </Collapsible>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <Collapsible className="flex flex-col items-center data-[state=open]:gap-4">
-                  <CollapsibleTrigger className="[&_svg]:data-[state=open]:rotate-180">
-                    <div className="flex items-center gap-2">
-                      <ChevronDown className="h-5 w-5 text-hojden-green" />
-                      <p>{t["Om_hojden"]}</p>
-                    </div>
-                  </CollapsibleTrigger>
-                  <CollapsibleContent className="flex flex-col items-center gap-6 data-[state=open]:py-6 data-[state=open]:px-8 rounded-md bg-hojden-beige-light">
-                    <NavigationMenuLink>
-                      <DialogClose asChild>
-                        <Link href="/om-hojden">
-                          {t["Verksamhet"]}
-                        </Link>
-                      </DialogClose>
-                    </NavigationMenuLink>
-
-                    <NavigationMenuLink>
-                      <DialogClose asChild>
-                        <Link href="/styrelsen">
-                          {t["Styrelsen"]}
-                        </Link>
-                      </DialogClose>
-                    </NavigationMenuLink>
-
-                    <NavigationMenuLink>
-                      <DialogClose asChild>
-                        <Link href="/kontakt">
-                          {t["Kontakt_och_hitta_hit"]}
-                        </Link>
-                      </DialogClose>
-                    </NavigationMenuLink>
-                  </CollapsibleContent>
-                </Collapsible>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <NavigationMenuLink>
-                  <DialogClose asChild>
-                    <Link href="/newsletter" className="block">
-                      {t["Nyhetsbrev"]}
-                    </Link>
-                  </DialogClose>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <NavigationMenuLink>
-                  <DialogClose asChild>
-                    <Link href="/supportmedlem" className="block">
-                      {t["Supportmedlem"]}
-                    </Link>
-                  </DialogClose>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
           <DialogFooter className="self-end relative pb-20">
