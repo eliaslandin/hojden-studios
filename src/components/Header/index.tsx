@@ -6,7 +6,6 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import {
@@ -20,7 +19,6 @@ import { Separator } from "../ui/separator";
 import { Link } from "@/navigation";
 import { content } from "@/lib/i18n/dictionary";
 import { SupportedLocale } from "@/types";
-import { getLocalizedContent } from "@/lib/i18n/venueAPI/utils";
 
 const NavigationMenuItemSized = ({
   children,
@@ -83,7 +81,7 @@ export const Header = ({
                               page.children?.map((childPage: Record<string, any>) => {
                                 return (
                                   <DropdownMenuItem className="w-full">
-                                    <DropDownLink href={`/${childPage.slug}`}>
+                                    <DropDownLink href={childPage.slug}>
                                       {childPage.content.title}
                                     </DropDownLink>
                                   </DropdownMenuItem>
@@ -103,7 +101,7 @@ export const Header = ({
                         orientation="vertical"
                       />
                       <NavigationMenuItemSized>
-                        <NavItem href={`/${page.slug}`}>{page.content.title}</NavItem>
+                        <NavItem href={page.slug}>{page.content.title}</NavItem>
                       </NavigationMenuItemSized>
                     </>
                   )

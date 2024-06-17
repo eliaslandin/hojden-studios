@@ -91,7 +91,7 @@ export const HeaderMobile = ({
                                 return (
                                   <NavigationMenuLink>
                                     <DialogClose asChild>
-                                      <Link href={`/${childPage.slug}`}>
+                                      <Link href={childPage.slug}>
                                         {childPage.content.title}
                                       </Link>
                                     </DialogClose>
