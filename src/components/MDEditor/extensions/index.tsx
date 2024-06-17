@@ -144,9 +144,9 @@ export const TiptapExtensions = [
     },
   }),
   Heading.configure({
-    levels: [2, 3],
+    levels: [2,3],
     HTMLAttributes: {
       class: h3Style,
     },
-  }),
+  })
 ];
