@@ -69,7 +69,7 @@ export const Header = ({
                         orientation="vertical"
                       />
                       <NavigationMenuItemSized>
-                        <DropdownMenu>
+                        <DropdownMenu modal={false}>
                           <DropdownMenuTrigger className="hover:text-hojden-lavender duration-200 [&_svg]:data-[state=open]:rotate-180">
                             <div className="flex items-center gap-1">
                               <ChevronDown className="h-4 w-4 text-hojden-green" />
