@@ -20,7 +20,6 @@ import { content } from "@/lib/i18n/dictionary";
 import { SupportedLocale } from "@/types";
 import { MobileNavLink } from "./MobileNavLink";
 import { MobileNavMenuItem } from "./MobileNavMenuItem";
-import { useEffect } from "react";
 
 export const HeaderMobile = ({ 
   locale,
