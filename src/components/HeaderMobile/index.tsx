@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Link } from "@/navigation";
-import { Menu, ChevronDown } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -13,26 +13,18 @@ import {
 } from "@/components/ui/dialog";
 import {
   NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from "@/components/ui/collapsible";
 import { LocaleSelectOverlay } from "../LocaleSelectOverlay";
 import { content } from "@/lib/i18n/dictionary";
-import { useLocale } from "next-intl";
 import { SupportedLocale } from "@/types";
+import { MobileNavLink } from "./MobileNavLink";
+import { MobileNavMenuItem } from "./MobileNavMenuItem";
 
 export const HeaderMobile = ({ 
-  className,
   locale,
   pages
-}: { 
-  className?: string,
+}: {
   locale: SupportedLocale,
   pages: Record<string, any>
 }) => {
@@ -63,63 +55,14 @@ export const HeaderMobile = ({
         <DialogContent className="w-full max-w-none h-full overflow-scroll justify-center items-start bg-hojden-beige text-2xl font-normal border-0 text-center">
           <NavigationMenu orientation="vertical">
             <NavigationMenuList className="flex-col gap-6 pt-10">
-              <NavigationMenuItem>
-                <NavigationMenuLink>
-                  <DialogClose asChild>
-                    <Link href="/" className="block">
-                      {t["Aktuellt"]}
-                    </Link>
-                  </DialogClose>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-
+              <MobileNavLink href="/">{t["Aktuellt"]}</MobileNavLink>
               {
                 pages.map((page: Record<string, any>) => {
-                  if (page.children) {
-                    return (
-                      <NavigationMenuItem>
-                        <Collapsible className="flex flex-col items-center data-[state=open]:gap-4">
-                          <CollapsibleTrigger className="[&_svg]:data-[state=open]:rotate-180">
-                            <div className="flex items-center gap-2">
-                              <ChevronDown className="h-5 w-5 text-hojden-green" />
-                              <p>{page.content.title}</p>
-                            </div>
-                          </CollapsibleTrigger>
-                          <CollapsibleContent className="flex flex-col items-center gap-6 data-[state=open]:py-6 data-[state=open]:px-8 rounded-md bg-hojden-beige-light">
-                            {
-                              page.children.map((childPage: Record<string, any>) => {
-                                return (
-                                  <NavigationMenuLink>
-                                    <DialogClose asChild>
-                                      <Link href={childPage.slug}>
-                                        {childPage.content.title}
-                                      </Link>
-                                    </DialogClose>
-                                  </NavigationMenuLink>
-                                )
-                              })
-                            }
-
-                          </CollapsibleContent>
-                        </Collapsible>
-                      </NavigationMenuItem>
-                    )
-                  } else {
-                    return (
-                      <NavigationMenuItem>
-                        <NavigationMenuLink>
-                          <DialogClose asChild>
-                            <Link href={page.slug} className="block">
-                              {page.content.title}
-                            </Link>
-                          </DialogClose>
-                        </NavigationMenuLink>
-                      </NavigationMenuItem>
-                    )
-                  }
+                  return (
+                    <MobileNavMenuItem key={page.id} href={page.slug} dropdownChildren={page.children}>{page.content.title}</MobileNavMenuItem>
+                  )
                 })
               }
-
             </NavigationMenuList>
           </NavigationMenu>
           <DialogFooter className="self-end relative pb-20">
