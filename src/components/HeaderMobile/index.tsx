@@ -20,6 +20,7 @@ import { content } from "@/lib/i18n/dictionary";
 import { SupportedLocale } from "@/types";
 import { MobileNavLink } from "./MobileNavLink";
 import { MobileNavMenuItem } from "./MobileNavMenuItem";
+import { useEffect } from "react";
 
 export const HeaderMobile = ({ 
   locale,
@@ -29,6 +30,14 @@ export const HeaderMobile = ({
   pages: Record<string, any>
 }) => {
   const t = content[(locale as "sv" | "en") || "en"].header;
+
+  const noBodyScroll = (open) => {
+    if (open) {
+      document.body.classList.add("overflow-hidden")
+    } else {
+      document.body.classList.remove("overflow-hidden")
+    }
+  }
 
   return (
     <header className="flex flex-col top-0 w-full md:hidden container">
@@ -41,7 +50,7 @@ export const HeaderMobile = ({
           className="w-max-full py-4"
         />
       </Link>
-      <Dialog>
+      <Dialog onOpenChange={(open) => noBodyScroll(open)}>
         <DialogTrigger asChild>
           <Button
             size="icon"
