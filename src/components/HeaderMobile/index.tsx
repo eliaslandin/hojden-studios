@@ -20,6 +20,15 @@ import { content } from "@/lib/i18n/dictionary";
 import { SupportedLocale } from "@/types";
 import { MobileNavLink } from "./MobileNavLink";
 import { MobileNavMenuItem } from "./MobileNavMenuItem";
+import { useEffect, useState } from "react";
+
+const noBodyScroll = (isOpen) => {
+  if (isOpen) {
+    document.body.classList.add("overflow-hidden")
+  } else {
+    document.body.classList.remove("overflow-hidden")
+  }
+}
 
 export const HeaderMobile = ({ 
   locale,
@@ -28,15 +37,14 @@ export const HeaderMobile = ({
   locale: SupportedLocale,
   pages: Record<string, any>
 }) => {
+  const [isOpen, setIsOpen] = useState(false)
   const t = content[(locale as "sv" | "en") || "en"].header;
 
-  const noBodyScroll = (open) => {
-    if (open) {
-      document.body.classList.add("overflow-hidden")
-    } else {
-      document.body.classList.remove("overflow-hidden")
-    }
-  }
+  useEffect(() => {
+    noBodyScroll(isOpen)
+
+    return () => { noBodyScroll(false) }
+  },[isOpen])
 
   return (
     <header className="flex flex-col top-0 w-full md:hidden container">
@@ -49,7 +57,7 @@ export const HeaderMobile = ({
           className="w-max-full py-4"
         />
       </Link>
-      <Dialog onOpenChange={(open) => noBodyScroll(open)}>
+      <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogTrigger asChild>
           <Button
             size="icon"
