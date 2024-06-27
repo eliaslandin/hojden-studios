@@ -14,8 +14,8 @@ export const NavDropdownLink = ({
   href: string;
 }) => {
   return (
-    <DropdownMenuItem className="w-full">
-      <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-hojden-green hover:text-hojden-lavender px-0 py-6 bg-transparent w-full justify-start")}>
+    <DropdownMenuItem className="w-full" asChild>
+      <NavigationMenuLink asChild className={cn(navigationMenuTriggerStyle(), "text-hojden-green hover:text-hojden-lavender focus:text-hojden-lavender px-0 py-6 bg-transparent w-full justify-start")}>
         <Link href={href} className="block text-lg font-light w-full pl-2">{children}</Link>
       </NavigationMenuLink>
     </DropdownMenuItem>
