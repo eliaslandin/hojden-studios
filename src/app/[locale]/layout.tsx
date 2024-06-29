@@ -8,6 +8,12 @@ import { unstable_setRequestLocale } from "next-intl/server";
 import { SupportedLocale } from "@/types";
 import { getPages } from "@/lib/i18n/venueAPI/fetchers";
 import { getLocalizedContent } from "@/lib/i18n/venueAPI/utils";
+import { PHProvider } from '../providers'
+import dynamic from 'next/dynamic'
+
+const PostHogPageView = dynamic(() => import('../PostHogPageView'), {
+  ssr: false,
+})
 
 const locales = ['en', 'sv'];
  
@@ -58,15 +64,17 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${barlow.className} relative flex flex-col text-hojden-green font-light bg-hojden-beige`}>
-        <LocaleSelectOverlay className="hidden md:flex"/>
-        <div className={`min-h-screen bg-white pb-footerheight`}>
-          <HeaderMobile locale={locale} pages={parsedPages}/>
-          <Header locale={locale} pages={parsedPages}/>
-          {children}
-        </div>
-        <Footer />
-      </body>
+      <PHProvider>
+        <body className={`${barlow.className} relative flex flex-col text-hojden-green font-light bg-hojden-beige`}>
+          <LocaleSelectOverlay className="hidden md:flex"/>
+          <div className={`min-h-screen bg-white pb-footerheight`}>
+            <HeaderMobile locale={locale} pages={parsedPages}/>
+            <Header locale={locale} pages={parsedPages}/>
+            {children}
+          </div>
+          <Footer />
+        </body>
+      </PHProvider>
     </html>
   );
 }
