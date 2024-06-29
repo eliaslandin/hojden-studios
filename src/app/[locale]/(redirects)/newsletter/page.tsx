@@ -5,5 +5,5 @@ import { unstable_setRequestLocale } from "next-intl/server";
 export default function Page({ params }: { params: { locale: SupportedLocale }}) {
   const { locale } = params;
   unstable_setRequestLocale(locale);
-  redirect("/var-verksamhet")
+  redirect("/nyhetsbrev")
 }
