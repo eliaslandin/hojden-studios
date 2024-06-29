@@ -19,6 +19,10 @@ export const content = {
     },
     calendar: {
       pageTitle: "Happening at höjden"
+    },
+    newsletter: {
+      pageTitle: "Newsletter",
+      paragraph: "Do you want to stay up to date with what is happening at höjden? Sign up for our newsletter!"
     }
   },
   sv: {
@@ -41,6 +45,10 @@ export const content = {
     },
     calendar: {
       pageTitle: "Händer på höjden"
+    },
+    newsletter: {
+      pageTitle: "Nyhetsbrev",
+      paragraph: "Vill du hålla dig uppdaterad om vad som händer på höjden? Anmäl dig till vårt nyhetsbrev!"
     }
   },
 };
