@@ -42,6 +42,63 @@ export default function Page({
         drift is made possible with support from Kulturrådet
       </p>
 
+      <Heading2>Episode 5: Listening to feelings, exploring sound</Heading2>
+      <p className="pb-6">
+        <iframe
+          style={{ borderRadius: "12px" }}
+          src="https://open.spotify.com/embed/episode/7lxsGbg6cAhs5JuLw3eEPk?utm_source=generator&theme=0"
+          width="100%"
+          height="152"
+          frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </p>
+
+      <p className="pb-6">
+        Ar and Foad are both active within the queer collective fake daughter
+        and have organised artistic programs, parties and political actions
+        together in and beyond höjden studios since its start in 2019. In the
+        fifth episode of drift dialogues they discuss their approaches to music
+        and choreography with a curiosity towards explorations of listening and
+        feeling without a set aim.
+      </p>
+      <p className="pb-6">
+        During the winter of 2024 Foad shared a practice with Ar directing focus
+        towards the small units in music, opening a restricted frame to play
+        with variation, texture and harmony. Ar invited Foad into a
+        visualisation practice that explored the forms we see the world through
+        by defining emotions as imaginary entities with texture, colour and
+        place.
+      </p>
+      <p className="pb-6">
+        Foad Arbabi is a composer, sound designer and song writer. As a self
+        taught producer they have over a decade of experience creating music for
+        performing arts. Foad’s body of work is unique in tone and wide in
+        expression, as of 2024 Foad is working on commissions and self initiated
+        projects whilst undertaking a formal education in musical composition.
+      </p>
+      <p className="pb-6">
+        Ar Utke Ács is an artist working within contemporary dance and an
+        expanded understanding of choreography. They work with the poetics and
+        politics of the body in the seams of performance, dramaturgy, text,
+        installation and the imaginary. Throughout the past years, they have
+        created works focusing on affect landscapes and subversive poetics of
+        positioning oneself non-verbally, including the performance echoes that
+        was co-produced with MDT (SE) and Dansehallerne (DK). Now they are
+        working on a series of works from the perspective of speculative
+        characters and worlds built on lived experience of dancing with chronic
+        illness.
+      </p>
+      <p className="pb-6">
+        Works mentioned:
+        <br />
+        Pauline Oliveros’ deep listening practice / scores
+        <br />
+        Alvin Lucier - I Am Sitting In A Room
+        <br />
+      </p>
+
       <Heading2>
         Episode 4: Secret missions, epic places: Karina Sarkissova and Molly
         Engblom
