@@ -91,7 +91,7 @@ export default function Page({
         illness.
       </p>
       <p className="pb-6">
-        Works mentioned:
+        <strong>Works mentioned:</strong>
         <br />
         Pauline Oliveros’ deep listening practice / scores
         <br />
