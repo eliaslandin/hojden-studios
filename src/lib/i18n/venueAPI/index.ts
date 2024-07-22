@@ -1,3 +1,5 @@
+import { headers } from "next/headers";
+
 type Direction = "asc" | "desc";
 
 type APIParams = {
@@ -19,8 +21,14 @@ const fetchData = async ({ path, ...params }: APIParams) => {
   try {
     const searchParams = new URLSearchParams(nonNullParams);
     const endpoint = `${path}?${searchParams.toString()}`;
-    //const response = await fetch(endpoint, { cache: "no-store" });
-    const response = await fetch(endpoint, { next: { revalidate: 0 } });
+
+    const fetchHeaders = new Headers(headers());
+    fetchHeaders.set("Authorization", `Bearer ${process.env.API_KEY}`);
+
+    const response = await fetch(endpoint, {
+      headers: fetchHeaders,
+      next: { revalidate: 0 },
+    });
 
     const data = await response.json();
 
