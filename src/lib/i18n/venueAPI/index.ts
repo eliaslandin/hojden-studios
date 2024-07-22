@@ -22,11 +22,10 @@ const fetchData = async ({ path, ...params }: APIParams) => {
     const searchParams = new URLSearchParams(nonNullParams);
     const endpoint = `${path}?${searchParams.toString()}`;
 
-    // const fetchHeaders = new Headers(headers());
-    // fetchHeaders.set("Authorization", `Bearer ${process.env.API_KEY}`);
-
     const response = await fetch(endpoint, {
-      // headers: fetchHeaders,
+      headers: {
+        Authorization: `Bearer ${process.env.API_KEY}`,
+      },
       next: { revalidate: 0 },
     });
 
