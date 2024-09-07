@@ -140,31 +140,14 @@ export async function getProduct(slug: string) {
 }
 
 export async function getPage(slug: string) {
-  return await unstable_cache(
-    () => client.page.fetch({ slug }),
-    [`page-${slug}`],
-    {
-      revalidate: DEFAULT_VALIDATION_TIME,
-      tags: [`page-${slug}`],
-    },
-  )();
+  return await client.page.fetch({ slug });
 }
 
 export async function getPages({ limit }: { limit?: number } = {}) {
-  return await unstable_cache(() => client.pages.fetch(), [`page`], {
-    revalidate: DEFAULT_VALIDATION_TIME,
-    tags: [`page`],
-  })();
+  return await client.pages.fetch();
 }
 
 // Get all featured pages
 export const getFeaturedPages = async ({ limit }: { limit?: number }) => {
-  return await unstable_cache(
-    () => client.pages.fetch({ limit, featured: true }),
-    [`featured-page`],
-    {
-      revalidate: DEFAULT_VALIDATION_TIME,
-      tags: [`featured-page`],
-    },
-  )();
+  return await client.pages.fetch({ limit, featured: true });
 };

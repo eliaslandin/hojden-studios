@@ -26,7 +26,7 @@ const fetchData = async ({ path, ...params }: APIParams) => {
       headers: {
         Authorization: `Bearer ${process.env.API_KEY}`,
       },
-      next: { revalidate: 0 },
+      next: { revalidate: 6 },
     });
 
     const data = await response.json();
