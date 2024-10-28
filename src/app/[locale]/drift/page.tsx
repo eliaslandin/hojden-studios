@@ -42,6 +42,33 @@ export default function Page({
         drift is made possible with support from Kulturrådet
       </p>
 
+
+      <Heading2>Episode 6: Walking in between skills and healing: Deike Ladwig and Yari Stilo</Heading2>
+      <p className="pb-6">
+        <iframe
+          style={{ borderRadius: "12px" }}
+          src="https://open.spotify.com/embed/episode/3ooApj9oRoG8iTDkz8Xskp?utm_source=generator&theme=0"
+          width="100%"
+          height="152"
+          frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </p>
+
+      <p className="pb-6">
+        What does it mean to listen through touch, to listen to a movement? In the sixth episode of drift dialogues clay and dance meet in a centrifugal force through push, pull and the possibility of flying off. 
+    </p>
+      <p className="pb-6">
+Yari has a background in ballet and Deike in lighting design, but both of them have discovered other worlds. Across several days and repeated walks a conversation emerges. It questions the status of art and the artist and discusses practices, tools and approaches that prioritize aesthetic exploration over disciplined performance and perfect results. 
+    </p>
+      <p className="pb-6">
+Yari Stilo received daily dance training from the age of 13 to 32. Thanks to his 84 auditions as a dancer/performer, he could empathize with, support, and bond with hundreds of dancers. From 2005, he danced in several European theater-based companies inspired by or that adapted ballet traditions. Since 2012, he has performed increasingly within experimental dance, participatory performances, choreographic installations, and performance art contexts. In 2018, he was reborn as a dancer when he started tango as an amateur and follower, the role traditionally practiced by women. Yari has been working as a personlig assistent for five years.
+    </p>
+      <p className="pb-6">
+Deike Ladwig, born in Hamburg 1979, came to Stockholm in 2004 as an exchange student but stayed ever since. Her background lies in architecture and architectural lighting design. She has been passionately designing lighting for public spaces both out in the city space and inside public buildings for almost 20 years. Now is a time for change which led Deike to study Expressive Arts Therapy at Hälsans Hus. Thus Art and Healing is her new quest and wonder. She works with clay sculpturing and throwing in particular, which brings joy and time for connecting hands, body and soul. Watercolor paint and oil pastels is another medium for expression that she loves.
+      </p>
+
       <Heading2>Episode 5: Listening to feelings, exploring sound</Heading2>
       <p className="pb-6">
         <iframe
