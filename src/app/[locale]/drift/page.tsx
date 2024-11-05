@@ -42,6 +42,43 @@ export default function Page({
         drift is made possible with support from Kulturrådet
       </p>
 
+<Heading2>Episode 7: Collage and sound sampling as drifting states: Daniela Serafimova and Karin Roberts</Heading2>
+      <p className="pb-6">
+        <iframe
+          style={{ borderRadius: "12px" }}
+          src="https://open.spotify.com/embed/episode/1xQdn69LTfIGOJaglkn750?utm_source=generator&theme=0"
+          width="100%"
+          height="152"
+          frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </p>
+
+      <p className="pb-6">
+How is the state of drifting a fundamental part of being in a creative process? What does it feel like and how long can it last? 
+    </p><p>
+
+
+
+Karins art and design practice meets Danielas song writing in her home on a warm summer day. They get to know each other through the proposed notion of drifting as they spend a day making both a song and a collage together. Listen to them discuss the process and their different approaches to music, language and images.
+
+    </p><p>
+
+Karin Roberts is a graphic designer and collage artist, working part time as a project manager for Nordberg Movement. She is also a co-founder of ARTmovement, an organisation that creates artistic meet-ups and co-creates art. 
+
+    </p><p>
+Daniela Serafimova is a Stockholm-based musician, writer and teacher. She produces her own music and is known for her multi-layered sound. She has collaborated with electronic DnB producers such as London Elektricity and Voltage on Hospital Records (UK). Her first single “Borderlands” was released 2020 at Cherish Label (SE), and the self produced EP “Saving Grace” was released in 2022. Currently Daniela is working on her debut album, a soft folk-jazz piano and vocal record with lyrics in Swedish.
+
+    </p><p>
+
+
+
+Works mentioned:<br/>
+Heather - Bill Cobham<br/>
+Lars Norén - Dagböcker<br/>
+        </p>
+
 
       <Heading2>Episode 6: Walking in between skills and healing: Deike Ladwig and Yari Stilo</Heading2>
       <p className="pb-6">
