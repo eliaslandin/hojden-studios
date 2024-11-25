@@ -42,7 +42,36 @@ export default function Page({
         drift is made possible with support from Kulturrådet
       </p>
 
-<Heading2>Episode 7: Collage and sound sampling as drifting states: Daniela Serafimova and Karin Roberts</Heading2>
+    <Heading2>Episode 8: A radio show: Salka Ardal Rosengren and Lisa Schåman</Heading2>
+    <p className="pb-6">
+    <iframe
+    style={{ borderRadius: "12px" }}
+    src="https://open.spotify.com/embed/episode/22bfPyPxwcCm6KIPZtHQnw?utm_source=generator&theme=0"
+    width="100%"
+    height="152"
+    frameBorder="0"
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy"
+  ></iframe>
+    </p>
+
+    <p className="pb-6">
+    Salka and Lisa met over the course of three days to spend time with each other and dance in höjden’s studio. In the eight episode of drift you are invited to become the listener of their radio show where they unpack some dance related concerns. As the show unfolds we follow them through a range of perspectives and are made aware of the many sides of what is going on. They underline unspoken rules and zoom in and out of their experience of doing and observing dance. What is actually the impact of having an audience and what is dance as a practice if it doesn't reach anyone? 
+
+    </p><p>
+
+
+
+Works/People mentioned:<br/>
+Peter Mills 
+    </p><p>
+Lisa Schåman is a dancer based in Stockholm. For the past few years, she has been working with choreographers such as Oda Brekke, Peter Mills, Malin Elgán, Carima Neusser, and Ellen Söderhult. Her artistic process is shaped by somatic practices, score-dance, games and play, as well as theories and philosophies related to dance and aesthetics, and texts written by dance makers. Lisa is a member of höjden, an artist syndicate in Östberga.
+    </p><p>
+
+Salka Ardal Rosengren jobbar med dans och performance. Hon är född och uppvuxen i Stockholm men flyttade till Bryssel där hon utbildade sig på P.A.R.T.S. (2006-2010). Salka har skapat verk tillsammans med Mikko Hyvönen (Trash Talk), Nicholas Hoffman (The Thing with a Hook) och Andrew Hardwidge (Subbodybodysub). Som dansare har hon jobbat och turnerat verk internationellt med bland andra: Ezster Salamon, Xavier Le Roy, Boris Charmatz, Daniel Linehan, Sarah Vanhee, Tino Sehgal, Gunilla Heilborn, Malin Élgan, Rosalind Goldberg, Liz Kinoshita och Salva Sanchis. Våren 2021 tog hon en master i Nya performativa praktiker på Stockholms Konstnärliga Högskola. Efter sin master skapade hon Lasting Figures som har spelats på Weld, Flockfestivalen, Atalante och åker vidare på Riksteaterturné hösten 2025.
+    </p>
+
+    <Heading2>Episode 7: Collage and sound sampling as drifting states: Daniela Serafimova and Karin Roberts</Heading2>
       <p className="pb-6">
         <iframe
           style={{ borderRadius: "12px" }}
