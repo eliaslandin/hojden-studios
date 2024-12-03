@@ -42,36 +42,107 @@ export default function Page({
         drift is made possible with support from Kulturrådet
       </p>
 
-    <Heading2>Episode 8: A radio show: Salka Ardal Rosengren and Lisa Schåman</Heading2>
-    <p className="pb-6">
-    <iframe
-    style={{ borderRadius: "12px" }}
-    src="https://open.spotify.com/embed/episode/22bfPyPxwcCm6KIPZtHQnw?utm_source=generator&theme=0"
-    width="100%"
-    height="152"
-    frameBorder="0"
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-    loading="lazy"
-  ></iframe>
-    </p>
+      <Heading2>
+        Episode 9: Art and Life: Andrew Hartwidge and Fatima Kassius
+      </Heading2>
+      <p className="pb-6">
+        <iframe
+          style={{ borderRadius: "12px" }}
+          src="https://open.spotify.com/embed/episode/5etb2JqMvQp8ujMUZ4G1S1?utm_source=generator&theme=0"
+          width="100%"
+          height="152"
+          frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </p>
 
-    <p className="pb-6">
-    Salka and Lisa met over the course of three days to spend time with each other and dance in höjden’s studio. In the eight episode of drift you are invited to become the listener of their radio show where they unpack some dance related concerns. As the show unfolds we follow them through a range of perspectives and are made aware of the many sides of what is going on. They underline unspoken rules and zoom in and out of their experience of doing and observing dance. What is actually the impact of having an audience and what is dance as a practice if it doesn't reach anyone? 
+      <p className="pb-6">
+        Fatima is the curator behind galleri höjden and wants to connect with
+        the neighbors. Andrew is a dramaturg and dancer, he enjoys feeding
+        people and grapples with what it means to be a performer who is also a
+        parent. In the 9th episode of drift they address their prioritization of
+        social relationships over artistic careers and question how context can
+        become part of a performance or an exhibition. Could collectivity gain
+        more importance when working with art and is it possible to hold space
+        for nurturing within artistic spheres?
+      </p>
+      <p className="pb-6">
+        Fatima Kassius is an artist working with painting and installation. Her
+        work examines memory, architecture and space and often results in site
+        specific installations that reach outside of the art space. She has a
+        BFA from Royal Institute of Art in Stockholm 2020. In 2021 she did her
+        solo show Lokál at Kulturhuset Möbeln in Tierp and she also exhibited in
+        group shows at Örebro Läns museum, Konsthall C, Konstakademien. She
+        often works in curatorial and collective projects and has recently
+        started galleri höjden together with Josephine Kamoun Johansson.
+      </p>
+      <p className="pb-6">
+        Andrew Hardwidge is a dance artist, dramaturg and researcher. He is
+        curious about the entanglements of aesthetic practice, life making and
+        political cosmologies. Recently he has been speaking with people about
+        healing, about authorship and questions of liberation.
+      </p>
 
-    </p><p>
+      <Heading2>
+        Episode 8: A radio show: Salka Ardal Rosengren and Lisa Schåman
+      </Heading2>
+      <p className="pb-6">
+        <iframe
+          style={{ borderRadius: "12px" }}
+          src="https://open.spotify.com/embed/episode/22bfPyPxwcCm6KIPZtHQnw?utm_source=generator&theme=0"
+          width="100%"
+          height="152"
+          frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </p>
 
+      <p className="pb-6">
+        Salka and Lisa met over the course of three days to spend time with each
+        other and dance in höjden’s studio. In the eight episode of drift you
+        are invited to become the listener of their radio show where they unpack
+        some dance related concerns. As the show unfolds we follow them through
+        a range of perspectives and are made aware of the many sides of what is
+        going on. They underline unspoken rules and zoom in and out of their
+        experience of doing and observing dance. What is actually the impact of
+        having an audience and what is dance as a practice if it doesn't reach
+        anyone?
+      </p>
+      <p>
+        Works/People mentioned:
+        <br />
+        Peter Mills
+      </p>
+      <p>
+        Lisa Schåman is a dancer based in Stockholm. For the past few years, she
+        has been working with choreographers such as Oda Brekke, Peter Mills,
+        Malin Elgán, Carima Neusser, and Ellen Söderhult. Her artistic process
+        is shaped by somatic practices, score-dance, games and play, as well as
+        theories and philosophies related to dance and aesthetics, and texts
+        written by dance makers. Lisa is a member of höjden, an artist syndicate
+        in Östberga.
+      </p>
+      <p>
+        Salka Ardal Rosengren jobbar med dans och performance. Hon är född och
+        uppvuxen i Stockholm men flyttade till Bryssel där hon utbildade sig på
+        P.A.R.T.S. (2006-2010). Salka har skapat verk tillsammans med Mikko
+        Hyvönen (Trash Talk), Nicholas Hoffman (The Thing with a Hook) och
+        Andrew Hardwidge (Subbodybodysub). Som dansare har hon jobbat och
+        turnerat verk internationellt med bland andra: Ezster Salamon, Xavier Le
+        Roy, Boris Charmatz, Daniel Linehan, Sarah Vanhee, Tino Sehgal, Gunilla
+        Heilborn, Malin Élgan, Rosalind Goldberg, Liz Kinoshita och Salva
+        Sanchis. Våren 2021 tog hon en master i Nya performativa praktiker på
+        Stockholms Konstnärliga Högskola. Efter sin master skapade hon Lasting
+        Figures som har spelats på Weld, Flockfestivalen, Atalante och åker
+        vidare på Riksteaterturné hösten 2025.
+      </p>
 
-
-Works/People mentioned:<br/>
-Peter Mills 
-    </p><p>
-Lisa Schåman is a dancer based in Stockholm. For the past few years, she has been working with choreographers such as Oda Brekke, Peter Mills, Malin Elgán, Carima Neusser, and Ellen Söderhult. Her artistic process is shaped by somatic practices, score-dance, games and play, as well as theories and philosophies related to dance and aesthetics, and texts written by dance makers. Lisa is a member of höjden, an artist syndicate in Östberga.
-    </p><p>
-
-Salka Ardal Rosengren jobbar med dans och performance. Hon är född och uppvuxen i Stockholm men flyttade till Bryssel där hon utbildade sig på P.A.R.T.S. (2006-2010). Salka har skapat verk tillsammans med Mikko Hyvönen (Trash Talk), Nicholas Hoffman (The Thing with a Hook) och Andrew Hardwidge (Subbodybodysub). Som dansare har hon jobbat och turnerat verk internationellt med bland andra: Ezster Salamon, Xavier Le Roy, Boris Charmatz, Daniel Linehan, Sarah Vanhee, Tino Sehgal, Gunilla Heilborn, Malin Élgan, Rosalind Goldberg, Liz Kinoshita och Salva Sanchis. Våren 2021 tog hon en master i Nya performativa praktiker på Stockholms Konstnärliga Högskola. Efter sin master skapade hon Lasting Figures som har spelats på Weld, Flockfestivalen, Atalante och åker vidare på Riksteaterturné hösten 2025.
-    </p>
-
-    <Heading2>Episode 7: Collage and sound sampling as drifting states: Daniela Serafimova and Karin Roberts</Heading2>
+      <Heading2>
+        Episode 7: Collage and sound sampling as drifting states: Daniela
+        Serafimova and Karin Roberts
+      </Heading2>
       <p className="pb-6">
         <iframe
           style={{ borderRadius: "12px" }}
@@ -85,31 +156,45 @@ Salka Ardal Rosengren jobbar med dans och performance. Hon är född och uppvuxe
       </p>
 
       <p className="pb-6">
-How is the state of drifting a fundamental part of being in a creative process? What does it feel like and how long can it last? 
-    </p><p>
+        How is the state of drifting a fundamental part of being in a creative
+        process? What does it feel like and how long can it last?
+      </p>
+      <p>
+        Karins art and design practice meets Danielas song writing in her home
+        on a warm summer day. They get to know each other through the proposed
+        notion of drifting as they spend a day making both a song and a collage
+        together. Listen to them discuss the process and their different
+        approaches to music, language and images.
+      </p>
+      <p>
+        Karin Roberts is a graphic designer and collage artist, working part
+        time as a project manager for Nordberg Movement. She is also a
+        co-founder of ARTmovement, an organisation that creates artistic
+        meet-ups and co-creates art.
+      </p>
+      <p>
+        Daniela Serafimova is a Stockholm-based musician, writer and teacher.
+        She produces her own music and is known for her multi-layered sound. She
+        has collaborated with electronic DnB producers such as London
+        Elektricity and Voltage on Hospital Records (UK). Her first single
+        “Borderlands” was released 2020 at Cherish Label (SE), and the self
+        produced EP “Saving Grace” was released in 2022. Currently Daniela is
+        working on her debut album, a soft folk-jazz piano and vocal record with
+        lyrics in Swedish.
+      </p>
+      <p>
+        Works mentioned:
+        <br />
+        Heather - Bill Cobham
+        <br />
+        Lars Norén - Dagböcker
+        <br />
+      </p>
 
-
-
-Karins art and design practice meets Danielas song writing in her home on a warm summer day. They get to know each other through the proposed notion of drifting as they spend a day making both a song and a collage together. Listen to them discuss the process and their different approaches to music, language and images.
-
-    </p><p>
-
-Karin Roberts is a graphic designer and collage artist, working part time as a project manager for Nordberg Movement. She is also a co-founder of ARTmovement, an organisation that creates artistic meet-ups and co-creates art. 
-
-    </p><p>
-Daniela Serafimova is a Stockholm-based musician, writer and teacher. She produces her own music and is known for her multi-layered sound. She has collaborated with electronic DnB producers such as London Elektricity and Voltage on Hospital Records (UK). Her first single “Borderlands” was released 2020 at Cherish Label (SE), and the self produced EP “Saving Grace” was released in 2022. Currently Daniela is working on her debut album, a soft folk-jazz piano and vocal record with lyrics in Swedish.
-
-    </p><p>
-
-
-
-Works mentioned:<br/>
-Heather - Bill Cobham<br/>
-Lars Norén - Dagböcker<br/>
-        </p>
-
-
-      <Heading2>Episode 6: Walking in between skills and healing: Deike Ladwig and Yari Stilo</Heading2>
+      <Heading2>
+        Episode 6: Walking in between skills and healing: Deike Ladwig and Yari
+        Stilo
+      </Heading2>
       <p className="pb-6">
         <iframe
           style={{ borderRadius: "12px" }}
@@ -123,16 +208,40 @@ Lars Norén - Dagböcker<br/>
       </p>
 
       <p className="pb-6">
-        What does it mean to listen through touch, to listen to a movement? In the sixth episode of drift dialogues clay and dance meet in a centrifugal force through push, pull and the possibility of flying off. 
-    </p>
+        What does it mean to listen through touch, to listen to a movement? In
+        the sixth episode of drift dialogues clay and dance meet in a
+        centrifugal force through push, pull and the possibility of flying off.
+      </p>
       <p className="pb-6">
-Yari has a background in ballet and Deike in lighting design, but both of them have discovered other worlds. Across several days and repeated walks a conversation emerges. It questions the status of art and the artist and discusses practices, tools and approaches that prioritize aesthetic exploration over disciplined performance and perfect results. 
-    </p>
+        Yari has a background in ballet and Deike in lighting design, but both
+        of them have discovered other worlds. Across several days and repeated
+        walks a conversation emerges. It questions the status of art and the
+        artist and discusses practices, tools and approaches that prioritize
+        aesthetic exploration over disciplined performance and perfect results.
+      </p>
       <p className="pb-6">
-Yari Stilo received daily dance training from the age of 13 to 32. Thanks to his 84 auditions as a dancer/performer, he could empathize with, support, and bond with hundreds of dancers. From 2005, he danced in several European theater-based companies inspired by or that adapted ballet traditions. Since 2012, he has performed increasingly within experimental dance, participatory performances, choreographic installations, and performance art contexts. In 2018, he was reborn as a dancer when he started tango as an amateur and follower, the role traditionally practiced by women. Yari has been working as a personlig assistent for five years.
-    </p>
+        Yari Stilo received daily dance training from the age of 13 to 32.
+        Thanks to his 84 auditions as a dancer/performer, he could empathize
+        with, support, and bond with hundreds of dancers. From 2005, he danced
+        in several European theater-based companies inspired by or that adapted
+        ballet traditions. Since 2012, he has performed increasingly within
+        experimental dance, participatory performances, choreographic
+        installations, and performance art contexts. In 2018, he was reborn as a
+        dancer when he started tango as an amateur and follower, the role
+        traditionally practiced by women. Yari has been working as a personlig
+        assistent for five years.
+      </p>
       <p className="pb-6">
-Deike Ladwig, born in Hamburg 1979, came to Stockholm in 2004 as an exchange student but stayed ever since. Her background lies in architecture and architectural lighting design. She has been passionately designing lighting for public spaces both out in the city space and inside public buildings for almost 20 years. Now is a time for change which led Deike to study Expressive Arts Therapy at Hälsans Hus. Thus Art and Healing is her new quest and wonder. She works with clay sculpturing and throwing in particular, which brings joy and time for connecting hands, body and soul. Watercolor paint and oil pastels is another medium for expression that she loves.
+        Deike Ladwig, born in Hamburg 1979, came to Stockholm in 2004 as an
+        exchange student but stayed ever since. Her background lies in
+        architecture and architectural lighting design. She has been
+        passionately designing lighting for public spaces both out in the city
+        space and inside public buildings for almost 20 years. Now is a time for
+        change which led Deike to study Expressive Arts Therapy at Hälsans Hus.
+        Thus Art and Healing is her new quest and wonder. She works with clay
+        sculpturing and throwing in particular, which brings joy and time for
+        connecting hands, body and soul. Watercolor paint and oil pastels is
+        another medium for expression that she loves.
       </p>
 
       <Heading2>Episode 5: Listening to feelings, exploring sound</Heading2>
