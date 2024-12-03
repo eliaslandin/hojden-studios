@@ -18,34 +18,34 @@ export default function Page({
       <Heading1 className=" text-hojden-orange">
         drift - a series of dialogues between artists at höjden studios
       </Heading1>
-      <p className="pb-6">
+      <Paragraph>
         drift is a proposal that aims to trace artistic and discursive
         tendencies moving through höjden studios.It simultaneously constitutes a
         forum where materials and ideas can transform, resonate or fall apart in
         the movement of recurring meetings.drift is a record of cacophonies
         landing slowly over time as artists at höjden studios invite for
         openings and points of connection.
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         With Ar Utke Ács Austeja Vilkaityte Foad Arbabi Karina Sarkissova Maia
         Means Molly Engblom Oda Brekke Paloma Madrid Robin Dingemans Scott Cazan
         Sonja Lindgren Stina Ehn
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         produced by Oda Brekke and Scott Cazan
         <br />
         graphic form by Edith Ekström
         <br />
         mastering by Foad Arbabi
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         drift is made possible with support from Kulturrådet
-      </p>
+      </Paragraph>
 
       <Heading2>
         Episode 9: Art and Life: Andrew Hartwidge and Fatima Kassius
       </Heading2>
-      <p className="pb-6">
+      <Paragraph>
         <iframe
           style={{ borderRadius: "12px" }}
           src="https://open.spotify.com/embed/episode/5etb2JqMvQp8ujMUZ4G1S1?utm_source=generator&theme=0"
@@ -55,9 +55,9 @@ export default function Page({
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
         ></iframe>
-      </p>
+      </Paragraph>
 
-      <p className="pb-6">
+      <Paragraph>
         Fatima is the curator behind galleri höjden and wants to connect with
         the neighbors. Andrew is a dramaturg and dancer, he enjoys feeding
         people and grapples with what it means to be a performer who is also a
@@ -66,8 +66,8 @@ export default function Page({
         become part of a performance or an exhibition. Could collectivity gain
         more importance when working with art and is it possible to hold space
         for nurturing within artistic spheres?
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         Fatima Kassius is an artist working with painting and installation. Her
         work examines memory, architecture and space and often results in site
         specific installations that reach outside of the art space. She has a
@@ -76,18 +76,18 @@ export default function Page({
         group shows at Örebro Läns museum, Konsthall C, Konstakademien. She
         often works in curatorial and collective projects and has recently
         started galleri höjden together with Josephine Kamoun Johansson.
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         Andrew Hardwidge is a dance artist, dramaturg and researcher. He is
         curious about the entanglements of aesthetic practice, life making and
         political cosmologies. Recently he has been speaking with people about
         healing, about authorship and questions of liberation.
-      </p>
+      </Paragraph>
 
       <Heading2>
         Episode 8: A radio show: Salka Ardal Rosengren and Lisa Schåman
       </Heading2>
-      <p className="pb-6">
+      <Paragraph>
         <iframe
           style={{ borderRadius: "12px" }}
           src="https://open.spotify.com/embed/episode/22bfPyPxwcCm6KIPZtHQnw?utm_source=generator&theme=0"
@@ -97,9 +97,9 @@ export default function Page({
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
         ></iframe>
-      </p>
+      </Paragraph>
 
-      <p className="pb-6">
+      <Paragraph>
         Salka and Lisa met over the course of three days to spend time with each
         other and dance in höjden’s studio. In the eight episode of drift you
         are invited to become the listener of their radio show where they unpack
@@ -109,13 +109,13 @@ export default function Page({
         experience of doing and observing dance. What is actually the impact of
         having an audience and what is dance as a practice if it doesn't reach
         anyone?
-      </p>
-      <p>
+      </Paragraph>
+      <Paragraph>
         Works/People mentioned:
         <br />
         Peter Mills
-      </p>
-      <p>
+      </Paragraph>
+      <Paragraph>
         Lisa Schåman is a dancer based in Stockholm. For the past few years, she
         has been working with choreographers such as Oda Brekke, Peter Mills,
         Malin Elgán, Carima Neusser, and Ellen Söderhult. Her artistic process
@@ -123,8 +123,8 @@ export default function Page({
         theories and philosophies related to dance and aesthetics, and texts
         written by dance makers. Lisa is a member of höjden, an artist syndicate
         in Östberga.
-      </p>
-      <p>
+      </Paragraph>
+      <Paragraph>
         Salka Ardal Rosengren jobbar med dans och performance. Hon är född och
         uppvuxen i Stockholm men flyttade till Bryssel där hon utbildade sig på
         P.A.R.T.S. (2006-2010). Salka har skapat verk tillsammans med Mikko
@@ -137,13 +137,13 @@ export default function Page({
         Stockholms Konstnärliga Högskola. Efter sin master skapade hon Lasting
         Figures som har spelats på Weld, Flockfestivalen, Atalante och åker
         vidare på Riksteaterturné hösten 2025.
-      </p>
+      </Paragraph>
 
       <Heading2>
         Episode 7: Collage and sound sampling as drifting states: Daniela
         Serafimova and Karin Roberts
       </Heading2>
-      <p className="pb-6">
+      <Paragraph>
         <iframe
           style={{ borderRadius: "12px" }}
           src="https://open.spotify.com/embed/episode/1xQdn69LTfIGOJaglkn750?utm_source=generator&theme=0"
@@ -153,26 +153,25 @@ export default function Page({
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
         ></iframe>
-      </p>
-
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         How is the state of drifting a fundamental part of being in a creative
         process? What does it feel like and how long can it last?
-      </p>
-      <p>
+      </Paragraph>
+      <Paragraph>
         Karins art and design practice meets Danielas song writing in her home
         on a warm summer day. They get to know each other through the proposed
         notion of drifting as they spend a day making both a song and a collage
         together. Listen to them discuss the process and their different
         approaches to music, language and images.
-      </p>
-      <p>
+      </Paragraph>
+      <Paragraph>
         Karin Roberts is a graphic designer and collage artist, working part
         time as a project manager for Nordberg Movement. She is also a
         co-founder of ARTmovement, an organisation that creates artistic
         meet-ups and co-creates art.
-      </p>
-      <p>
+      </Paragraph>
+      <Paragraph>
         Daniela Serafimova is a Stockholm-based musician, writer and teacher.
         She produces her own music and is known for her multi-layered sound. She
         has collaborated with electronic DnB producers such as London
@@ -181,21 +180,21 @@ export default function Page({
         produced EP “Saving Grace” was released in 2022. Currently Daniela is
         working on her debut album, a soft folk-jazz piano and vocal record with
         lyrics in Swedish.
-      </p>
-      <p>
+      </Paragraph>
+      <Paragraph>
         Works mentioned:
         <br />
         Heather - Bill Cobham
         <br />
         Lars Norén - Dagböcker
         <br />
-      </p>
+      </Paragraph>
 
       <Heading2>
         Episode 6: Walking in between skills and healing: Deike Ladwig and Yari
         Stilo
       </Heading2>
-      <p className="pb-6">
+      <Paragraph>
         <iframe
           style={{ borderRadius: "12px" }}
           src="https://open.spotify.com/embed/episode/3ooApj9oRoG8iTDkz8Xskp?utm_source=generator&theme=0"
@@ -205,21 +204,21 @@ export default function Page({
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
         ></iframe>
-      </p>
+      </Paragraph>
 
-      <p className="pb-6">
+      <Paragraph>
         What does it mean to listen through touch, to listen to a movement? In
         the sixth episode of drift dialogues clay and dance meet in a
         centrifugal force through push, pull and the possibility of flying off.
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         Yari has a background in ballet and Deike in lighting design, but both
         of them have discovered other worlds. Across several days and repeated
         walks a conversation emerges. It questions the status of art and the
         artist and discusses practices, tools and approaches that prioritize
         aesthetic exploration over disciplined performance and perfect results.
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         Yari Stilo received daily dance training from the age of 13 to 32.
         Thanks to his 84 auditions as a dancer/performer, he could empathize
         with, support, and bond with hundreds of dancers. From 2005, he danced
@@ -230,8 +229,8 @@ export default function Page({
         dancer when he started tango as an amateur and follower, the role
         traditionally practiced by women. Yari has been working as a personlig
         assistent for five years.
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         Deike Ladwig, born in Hamburg 1979, came to Stockholm in 2004 as an
         exchange student but stayed ever since. Her background lies in
         architecture and architectural lighting design. She has been
@@ -242,10 +241,10 @@ export default function Page({
         sculpturing and throwing in particular, which brings joy and time for
         connecting hands, body and soul. Watercolor paint and oil pastels is
         another medium for expression that she loves.
-      </p>
+      </Paragraph>
 
       <Heading2>Episode 5: Listening to feelings, exploring sound</Heading2>
-      <p className="pb-6">
+      <Paragraph>
         <iframe
           style={{ borderRadius: "12px" }}
           src="https://open.spotify.com/embed/episode/7lxsGbg6cAhs5JuLw3eEPk?utm_source=generator&theme=0"
@@ -255,32 +254,31 @@ export default function Page({
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
         ></iframe>
-      </p>
-
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         Ar and Foad are both active within the queer collective fake daughter
         and have organised artistic programs, parties and political actions
         together in and beyond höjden studios since its start in 2019. In the
         fifth episode of drift dialogues they discuss their approaches to music
         and choreography with a curiosity towards explorations of listening and
         feeling without a set aim.
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         During the winter of 2024 Foad shared a practice with Ar directing focus
         towards the small units in music, opening a restricted frame to play
         with variation, texture and harmony. Ar invited Foad into a
         visualisation practice that explored the forms we see the world through
         by defining emotions as imaginary entities with texture, colour and
         place.
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         Foad Arbabi is a composer, sound designer and song writer. As a self
         taught producer they have over a decade of experience creating music for
         performing arts. Foad’s body of work is unique in tone and wide in
         expression, as of 2024 Foad is working on commissions and self initiated
         projects whilst undertaking a formal education in musical composition.
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         Ar Utke Ács is an artist working within contemporary dance and an
         expanded understanding of choreography. They work with the poetics and
         politics of the body in the seams of performance, dramaturgy, text,
@@ -291,21 +289,21 @@ export default function Page({
         working on a series of works from the perspective of speculative
         characters and worlds built on lived experience of dancing with chronic
         illness.
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         <strong>Works mentioned:</strong>
         <br />
         Pauline Oliveros’ deep listening practice / scores
         <br />
         Alvin Lucier - I Am Sitting In A Room
         <br />
-      </p>
+      </Paragraph>
 
       <Heading2>
         Episode 4: Secret missions, epic places: Karina Sarkissova and Molly
         Engblom
       </Heading2>
-      <p className="pb-6">
+      <Paragraph>
         <iframe
           style={{ borderRadius: "12px" }}
           src="https://open.spotify.com/embed/episode/2VdLK2QydSbpUv87sBN3Hl?utm_source=generator&theme=0"
@@ -315,21 +313,21 @@ export default function Page({
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
         ></iframe>
-      </p>
+      </Paragraph>
 
-      <p className="pb-6">
+      <Paragraph>
         In the fourth episode of drift dialogues Karina and Molly discuss their
         practices, and their use of text as well as the role that spaces outside
         of the studio and institutions play in their practices of dance,
         curating and poetry.
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         They touch upon the use of montage and collage and dig into their
         motives for making art departing from two meetings in the studio at
         höjden, right in the beginning of 2024 where they exchanged practices by
         sharing, leaking, and finding common points of interest.
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         Karina Sarkissova is an independent curator and dramaturge based in
         Uppsala and Stockholm. She graduated in 2012 at the School for New Dance
         Development in Amsterdam (SNDO) and in 2019 at Dutch Art Institute
@@ -339,8 +337,8 @@ export default function Page({
         Östberga, a space for artistic production. Karinas practice is
         dramaturgical, choreographic and curatorial; she is regularly working
         with other artists’ work and develops choreographic contexts.
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         molly is a dancer, choreographer and poet based in Stockholm with a BFA
         in Dance performance from Stockholm University of the Arts (2019). molly
         works experimentally with dance, voice and text to make work that takes
@@ -350,8 +348,8 @@ export default function Page({
         shivering fictions she wants to create situations where relational and
         poetic encounters can take place. Currently she is investigating the
         poetics of monstrosity, abjection and desire.
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         <strong>Works mentioned:</strong>
         <br />
         And then it got legs, Jeroen Peeters
@@ -368,13 +366,13 @@ export default function Page({
         <br />
         INTER, by Karina Sarkissova. Commissioned work for the project Myths and
         realities, a lesbian oddysé
-      </p>
+      </Paragraph>
 
       <Heading2>
         Episode 3: A four year old birch tree told me: Paloma Madrid and Robin
         Dingemans
       </Heading2>
-      <p className="pb-6">
+      <Paragraph>
         <iframe
           style={{ borderRadius: "12px" }}
           src="https://open.spotify.com/embed/episode/5IcfxdDnptvJZWwPLZS2lL?utm_source=generator&theme=0"
@@ -384,15 +382,15 @@ export default function Page({
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
         ></iframe>
-      </p>
+      </Paragraph>
 
-      <p className="pb-6">
+      <Paragraph>
         October 2023 Paloma and Robin met in Vinterviken where they engaged in a
         shared curiosity towards the ancient wisdom of forests and gardens. In
         the third episode of drift dialogues you are invited to listen to their
         practices, unfolding through mantras and stories in a rainy afternoon.
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         Paloma Madrid/Mar Lobos has been working in the dance field since 2005
         as a choreographer, dance educator, dancer and artist. Recognized as an
         active and emerging artist, she is often described in the field as the
@@ -410,8 +408,8 @@ export default function Page({
         longlife process with the collective Tvillingskapet and V.C.V.T. Paloma
         holds a Master of Fine Arts in Choreography and a Bachelor of Arts in
         Dance Pedagogy from DOCH-SKH Stockholm University of Arts, Sweden.
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         Robin Dingemans is a choreographer, performer & teacher from Aotearoa, a
         Pākehā based in Europe since 1999. Robin's work includes dance for the
         stage, non-traditional performance spaces, video, social dances, work
@@ -432,22 +430,22 @@ export default function Page({
         created works, supervised, taught improvisation, composition and
         creative practices at many Conservatoires, Universities and a broad
         spectrum of professional and community contexts internationally.
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         Works mentioned in the episode
         <br />
         <a href="https://www.iwgia.org/en/news/4511-building-alliances-in-pandemic-times-the-zapatista-journey-through-europe.html">
           Gloria E Anzaldua- Light in the dark, zapatistas movement
         </a>
-      </p>
+      </Paragraph>
 
-      <p className="pb-6">Photo: Javier Lopez</p>
+      <Paragraph>Photo: Javier Lopez</Paragraph>
 
       <Heading2>
         Episode 2: How does it shape the way we dwell? Sonja Lindgren and Oda
         Brekke
       </Heading2>
-      <p className="pb-6">
+      <Paragraph>
         <iframe
           style={{ borderRadius: "12px" }}
           src="https://open.spotify.com/embed/episode/3xxZ3PcTVrvriCuk5UiqUW?utm_source=generator&theme=0"
@@ -457,9 +455,8 @@ export default function Page({
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
         ></iframe>
-      </p>
-
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         The second episode of drift dialogues starts in the middle of a
         practice. Sonja comes from architecture and Oda from dance, they
         discover they share many interests, but use different words. In this
@@ -468,19 +465,19 @@ export default function Page({
         things. How can ideas and methods alter our perception? What are the
         limits of the formats we use when we work and how do they form the
         potential for thinking and memorizing?
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         During November 2023 they met several times over a pile of papers and
         books in höjdens studio. Listen to them read, describe and discuss their
         own work as well as texts and performances by other artists and
         thinkers.
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         Sonja Lindgren is an architect based in Stockholm, and works in the
         fields of architecture, design and scenography. She is educated at Umeå
         School of Architecture.
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         Oda Brekke is a dance artist based in Stockholm, working internationally
         as a choreographer, writer and performer. Her choreographic work has
         been presented at MDT, Weld and Fylkingen in Stockholm, Bergen Kjøtt and
@@ -488,9 +485,9 @@ export default function Page({
         surface left’ (2021), ‘Cut: a choreo-essay’(2023) and ‘dead dead
         document’ (2024). Since 2018 she has organised a range of discursive
         formats and structures for collective spaces and processes.
-      </p>
-      <p className="pb-6">Works mentioned in the episode:</p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>Works mentioned in the episode:</Paragraph>
+      <Paragraph>
         <a
           href="https://www.skogen.pm/publication/oYXbtdaJbecXi3uxJ"
           target="_blank"
@@ -499,17 +496,17 @@ export default function Page({
         </a>
         <br />
         From the publication Art as Practice| Art as object
-      </p>
+      </Paragraph>
 
-      <p className="pb-6">
+      <Paragraph>
         <a href="https://odabrekke.com/Cut-a-choreo-essay" target="_blank">
           Cut: a choreo-essay- Oda Brekke
         </a>
         <br />
         Performed at 14.01.2023 Kafé Mix, höjden studios
-      </p>
+      </Paragraph>
 
-      <p className="pb-6">
+      <Paragraph>
         <a
           href="https://urn.kb.se/resolve?urn=urn:nbn:se:umu:diva-196662"
           target="_blank"
@@ -517,22 +514,22 @@ export default function Page({
           the deconstruction of the image of swedish domestic architecture
           through ‘marginalia’- Sonja Lindgren
         </a>
-      </p>
+      </Paragraph>
 
-      <p className="pb-6">
+      <Paragraph>
         <a
           href="https://www.alicechauchat.net/text-breastpiece.html"
           target="_blank"
         >
           The Breast piece- Alice Chauchat & Frédéric Gies
         </a>
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         Translating the Essay into Film and Installation- Nora M. Alter
-      </p>
-      <p className="pb-6">Michael Taussig- Fieldwork Notebooks</p>
-      <p className="pb-6">Sarah Vanhee- Oblivion</p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>Michael Taussig- Fieldwork Notebooks</Paragraph>
+      <Paragraph>Sarah Vanhee- Oblivion</Paragraph>
+      <Paragraph>
         <a
           href="https://www.gabrielmaher.xyz/wonderment-domastication"
           target="_blank"
@@ -540,12 +537,12 @@ export default function Page({
           "Wonderment Domastication"
         </a>
         , Gabriel A Maher
-      </p>
+      </Paragraph>
 
       <Heading2>
         Episode 1: Words with many textures: Maia Means and Stina Ehn
       </Heading2>
-      <p className="pb-6">
+      <Paragraph>
         <iframe
           style={{ borderRadius: "12px" }}
           src="https://open.spotify.com/embed/episode/6x5oT9yWMEMafBhilRFp8b?utm_source=generator&theme=0"
@@ -555,16 +552,17 @@ export default function Page({
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
         ></iframe>
-      </p>
+      </Paragraph>
 
-      <p className="pb-6">
+      <Paragraph>
         In the first episode of drift dialogues you hear a non-linear reading of
         a book Maia and Stina made together when they met in the studio at
         höjden November 2023. The reading is followed by a discussion some
         months later where they look back at the activities that led to and
         landed in the book.
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+
+      <Paragraph>
         Amongst other things Maia invited Stina to join her in scores of
         listening, talking, writing and moving, adapted from her recent piece
         ‘fictions, stitched’ with Copenhagen based choreographer Max Wallmeier
@@ -572,8 +570,8 @@ export default function Page({
         movement and writing practices, and proposed a performance score that
         took place around the whole house, adapted from her ongoing process with
         the Zürich based artist Sophie Germanier.
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         STINA EHN (SE) works with dance and choreography based in Stockholm. Her
         work departs from experimental methods where steps and language inform
         one another and she often works in close collaboration with other
@@ -582,8 +580,8 @@ export default function Page({
         Köttinspektionen in Uppsala. Stina has been a member of höjden studios
         since 2020 and part of organizing the performance event Kafé Mix since
         2022.
-      </p>
-      <p className="pb-6">
+      </Paragraph>
+      <Paragraph>
         MAIA MEANS (NO/DK) is a Stockholm-based freelance dancer who spends time
         between performance, text and organisational practices. The last years
         she has worked with choreographers such as Oda Brekke, Sindri Runudde,
@@ -591,7 +589,7 @@ export default function Page({
         Wallmeier, she has created two books and the performance “fictions,
         stitched” that premiered in 2023. Means is part of running “höjden”, a
         self-organised space for artists in Stockholm.
-      </p>
+      </Paragraph>
       <p className="pb-6 text-hojden-orange">More episodes coming soon...</p>
 
       <HojdenButton href="https://forms.gle/VATrpZTMH8vdaqpd8" target="_blank">
@@ -606,3 +604,5 @@ export default function Page({
     </PageContent>
   );
 }
+
+const Paragraph = ({ children }) => <p className="pb-6">{children}</p>;
