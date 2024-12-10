@@ -43,7 +43,7 @@ export default function Page({
       </Paragraph>
 
       <Heading2>
-        Episode 9: Art and Life: Andrew Hartwidge and Fatima Kassius
+        Episode 9: Art and Life: Andrew Hardwidge and Fatima Kassius
       </Heading2>
       <Paragraph>
         <iframe
